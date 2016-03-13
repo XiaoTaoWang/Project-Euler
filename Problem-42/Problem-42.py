@@ -22,3 +22,33 @@ Using words.txt, a 16K text file containing nearly two-thousand common
 English words, how many are triangle words?
 
 """
+import string, math
+
+def readdata(filename):
+    
+    with open(filename, 'r') as F:
+        parse = F.readline().rstrip().split(',')
+        data = [mem[1:-1] for mem in parse]
+    
+    return data
+
+def triangleWord(data):
+    
+    letters = string.ascii_uppercase
+    D = dict(zip(letters, range(1, len(letters)+1)))
+    
+    count = 0
+    for word in data:
+        value = 0
+        for w in word:
+            value += D[w]
+        check = (math.sqrt(8*value + 1) - 1) / 2.
+        if check == int(check):
+            count += 1
+    
+    return count
+
+if __name__ == '__main__':
+    data = readdata('p042_words.txt')
+    print(triangleWord(data))
+    
