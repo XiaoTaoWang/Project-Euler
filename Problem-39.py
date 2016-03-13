@@ -1,20 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 03 10:01:47 2016
+Created on Sun Mar 13 13:28:50 2016
 
-@author: wxt
+@author: Xiaotao Wang
 """
 
 """
-Problem 9:
+Problem 39:
 
-A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
-a^2 + b^2 = c^2
+If p is the perimeter of a right angle triangle with integral length sides,
+{a,b,c}, there are exactly three solutions for p = 120.
 
-For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+{20,48,52}, {24,45,51}, {30,40,50}
 
-There exists exactly one Pythagorean triplet for which a + b + c = 1000.
-Find the product abc.
+For which value of p ≤ 1000, is the number of solutions maximised?
 
 """
 import math
@@ -33,8 +32,9 @@ def euclidean(x, y):
     
     return y
 
-def findtriplet(condition):
+def tripletNum(condition):
     
+    count = 0
     maxiter = int(math.sqrt(condition))
     for n in range(1, maxiter + 1):
         for m in range(n+1, maxiter + 1):
@@ -49,13 +49,16 @@ def findtriplet(condition):
                     if a + b + c > condition:
                         break
                     if a + b + c == condition:
-                        return a * b * c
+                        count += 1
                     k += 1 # non primitive triplets?
     
-    return
-        
+    return count
 
 if __name__ == '__main__':
-    
-    print(findtriplet(1000))
-            
+    Sum = 0
+    maxnum = 0
+    for i in range(12, 1001):
+        count = tripletNum(i)
+        if count > maxnum:
+            maxnum = count
+            Sum = i
