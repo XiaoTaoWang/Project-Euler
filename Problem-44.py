@@ -21,3 +21,33 @@ difference are pentagonal and D = |Pk − Pj| is minimised; what is the value
 of D?
 
 """
+# The first such pair is (Pj, Pk) = (1560090, 7042750), where j = 1020, and
+# k = 2167. If you check (j, k) = (2167, 2168), you will get D = 7047084,
+# obviously greater than 7042750 - 1560090 = 5482660. So 5482660 is the minimised
+# D
+import math
+
+def isPentagonal(num):
+    
+    check = (1 + math.sqrt(1 + 24*num)) / 6
+    
+    return int(check) == check
+
+def findpair():
+    
+    k = 1
+    while True:
+        k += 1
+        Pk = k * (3*k-1) / 2
+        j = k - 1
+        while j > 0:
+            Pj = j * (3*j-1) / 2
+            D = Pk - Pj
+            S = Pk + Pj
+            if isPentagonal(D) and isPentagonal(S):
+                return D, k, j
+            j -= 1
+
+if __name__ == '__main__':
+    
+    print findpair()
