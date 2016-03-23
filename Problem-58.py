@@ -32,7 +32,7 @@ along both diagonals first falls below 10%?
 import numpy as np
 
 #------------------------------------------------------------------------------
-# The naive (and the most laborious) way for primality test
+# The naive (and the most laborious) way for primality test(~6.22s)
 def findallprimes(maxnum):
     
     Bool = np.ones(maxnum, dtype = bool)
@@ -60,7 +60,7 @@ def trial_division(n, primeList):
         prime_factors.append(n)
     return prime_factors
 #------------------------------------------------------------------------------
-# Miller-Rabin primality test (a probabilistic algorithm)
+# Miller-Rabin primality test (a probabilistic algorithm) (~589ms)
 def get_witnesses(n):
     """
     Returns a tuple of definitive Miller-Rabin witnesses for n.
