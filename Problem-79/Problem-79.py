@@ -68,3 +68,5 @@ def graph_from_login(login_file):
 if __name__ == '__main__':
     graph = graph_from_login('p079_keylog.txt')
     passcode = toposort(graph)
+    # print list(passcode)
+    # [{'7'}, {'3'}, {'1'}, {'6'}, {'2'}, {'8'}, {'9'}, {'0'}]
