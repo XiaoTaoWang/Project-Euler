@@ -25,3 +25,39 @@ order of size, find the numerator of the fraction immediately to the left of
 
 """
 # HCF -- Highest Common Factor
+def euclidean(x, y):
+    
+    assert x > 0, y > 0
+    
+    if x < y:
+        x, y = y, x
+    
+    mod = x % y
+    while mod != 0:
+        x, y = y, mod
+        mod = x % y
+    
+    return y
+
+def find_fraction(a, b, maxdenom = 1000000):
+    
+    r = 0
+    s = 1
+    lowerbound = 2
+    q = maxdenom
+    while q > lowerbound:
+        p = (a * q - 1) // b
+        if p*s > q*r:
+            s = q
+            r = p
+            lowerbound = s / (a*s - b*r)
+        q -= 1
+    
+    while euclidean(r, s) != 1:
+        r /= euclidean(r, s)
+        s /= euclidean(r, s)
+    
+    return r, s
+
+if __name__ == '__main__':
+    res = find_fraction(3, 7)
