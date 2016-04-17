@@ -22,3 +22,18 @@ How many different ways can one hundred be written as a sum of at least two
 positive integers?
 
 """
+# Recall Problem 31 ...
+# Use dynamic programming
+def dynamic(total):
+    
+    pieces = list(range(1, total))
+    counts = [0 for i in range(total+1)]
+    counts[0] = 1
+    for p in pieces:
+        for med in range(p, total+1):
+            counts[med] += counts[med-p]
+    
+    return counts[-1]
+
+if __name__ == '__main__':
+    res = dynamic(100)

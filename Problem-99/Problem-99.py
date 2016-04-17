@@ -23,3 +23,22 @@ NOTE: The first two lines in the file represent the numbers in the example
 given above.
 
 """
+import numpy as np
+
+def find_largest(filename):
+    
+    lognum = []
+    cache = []
+    with open(filename, 'r') as F:
+        for line in F:
+            parse = line.rstrip().split(',')
+            lognum.append(int(parse[1]) * np.log(int(parse[0])))
+            cache.append(line)
+    
+    lognum = np.r_[lognum]
+    maxidx = lognum.argmax()
+    
+    return maxidx, cache[maxidx]
+
+if __name__ == '__main__':
+    res = find_largest('p099_base_exp.txt')
