@@ -24,7 +24,7 @@ import copy
 
 def readdata(filename):
     
-    data = [map(int, line.rstrip().split()) for line in open(filename)]
+    data = [list(map(int, line.rstrip().split())) for line in open(filename)]
     
     return data
 
@@ -34,12 +34,12 @@ def dynamic(data):
     maxtotal = copy.deepcopy(data)
     
     paths[0][0] = 0
-    for i in xrange(1, len(data)):
+    for i in range(1, len(data)):
         maxtotal[i][0] = maxtotal[i-1][0] + data[i][0]
         paths[i][0] = 0
-        for j in xrange(1, len(data[i])-1):
+        for j in range(1, len(data[i])-1):
             tmp = 0
-            for k in xrange(j-1, j+1):
+            for k in range(j-1, j+1):
                 if maxtotal[i-1][k] > tmp:
                     maxtotal[i][j] = maxtotal[i-1][k] + data[i][j]
                     paths[i][j] = k
@@ -50,7 +50,7 @@ def dynamic(data):
     
     maximum = 0
     idx = 0
-    for i in xrange(len(maxtotal[-1])):
+    for i in range(len(maxtotal[-1])):
         if maxtotal[-1][i] > maximum:
             maximum = maxtotal[-1][i]
             idx = i
