@@ -17,51 +17,56 @@ Find the minimal path sum, in matrix.txt, a 31K text file containing a 80
 by 80 matrix, from the left column to the right column.
 """
 import copy
+import numpy as np
 
 def readdata(filename):
     
     data = [list(map(int, line.rstrip().split(','))) for line in open(filename)]
-    totalsum = sum(list(map(sum, data)))
     
-    return data, totalsum
+    return data
 
-def dynamic(data, totalsum):
+def dynamic(data):
     
     paths = copy.deepcopy(data)
-    mintotal = copy.deepcopy(data)
+    mintotal = np.r_[data]
     
     for i in range(1, len(data)):
         paths[i][0] = (i, 0)
     
-    for i in range(len(data)):
-        for j in range(1, len(data[i])):
-            tmp = totalsum
-            if i == 0:
-                coords = zip([i,i+1], [j-1,j])
-            elif i == (len(data)-1):
-                coords = zip([i,i-1], [j-1,j])
-            else:
-                coords = zip([i,i-1,i+1], [j-1,j,j])
-            for k, t in coords:
-                if mintotal[k][t] < tmp:
-                    mintotal[i][j] = mintotal[k][t] + data[i][j]
-                    paths[i][j] = (k, t)
-                    tmp = mintotal[k][t]
+    for stage in range(1, len(data[0])):
+        tmpsum = []
+        for i in range(len(data)):
+            orisum = mintotal[i, stage-1] + mintotal[i, stage]
+            p = (i, stage-1)
+            for j in range(0, i):
+                cursum = mintotal[j, stage-1] + mintotal[j:i+1, stage].sum()
+                if cursum < orisum:
+                    orisum = cursum
+                    p = (i-1, stage)
+            
+            for j in range(i+1, len(data)):
+                cursum = mintotal[j, stage-1] + mintotal[i:j+1, stage].sum()
+                if cursum < orisum:
+                    orisum = cursum
+                    p = (i+1, stage)
+                    
+            tmpsum.append(orisum)
+            paths[i][stage] = p
+        
+        mintotal[:,stage] = tmpsum
     
-    minimum = totalsum
-    for i in range(len(data)):
-        if mintotal[i][-1] < minimum:
-            minimum = mintotal[i][-1]
-            idx = paths[i][-1]
-    '''
-    path = [idx]
-    while idx[1] != 0:
-        idx = paths[idx[0]][idx[1]]
-        path = [idx] + path
-    '''
-    return mintotal, paths, minimum, idx
+    minidx = mintotal[:,-1].argmin()
+    minimum = mintotal[minidx, -1]
+    
+    pos = paths[minidx][-1]
+    path = [pos]
+    while pos[1] != 0:
+        pos = paths[pos[0]][pos[1]]
+        path = [pos] + path
+    
+    return minimum, path
     
 if __name__ == '__main__':
     
-    data, totalsum = readdata('p082_matrix.txt')
-    res = dynamic(data, totalsum)
+    data = readdata('p082_matrix.txt')
+    res = dynamic(data)
