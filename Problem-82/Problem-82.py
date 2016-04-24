@@ -16,6 +16,7 @@ to 994.
 Find the minimal path sum, in matrix.txt, a 31K text file containing a 80
 by 80 matrix, from the left column to the right column.
 """
+# Given a n*n matirx, the complexity of this algorithm is O(n^3)
 import copy
 import numpy as np
 

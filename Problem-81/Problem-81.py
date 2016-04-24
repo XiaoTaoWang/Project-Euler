@@ -17,6 +17,7 @@ by 80 matrix, from the top left to the bottom right by only moving right and
 down.
 
 """
+# Time complexity: O(n^2), here, n is the length of the matirx
 import copy
 
 def readdata(filename):
