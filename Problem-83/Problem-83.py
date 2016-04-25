@@ -18,6 +18,9 @@ and down.
 
 """
 # This problem can be converted into a shortest path problem in Graph Theory.
+# Here is my implementation for the well-known Dijkstra's algorithm
+# The code runs in O((|E|+|V|)log|V|) by using a priority queue, where |E|
+# indicates the number of edges, and |V| is the number of nodes.
 
 import heapq, itertools, math
 
