@@ -28,6 +28,13 @@ In the first one-thousand expansions, how many fractions contain a numerator
 with more digits than denominator?
 
 """
+# Just think about the calculation procedure of the iterations
+# We can get the following two recursive formulas:
+# d(k) = d(k-1) + n(k-1)
+# n(k) = 2 * d(k-1) + n(k-1)
+# From programming perspective, we have:
+# n(k) = 2 * d(k-1) + n(k-1)
+# d(k) = n(k) - d(k-1)
 
 def count(maxexp = 1000):
     
