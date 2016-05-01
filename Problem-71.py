@@ -46,10 +46,16 @@ def find_fraction(a, b, maxdenom = 1000000):
     lowerbound = 2
     q = maxdenom
     while q > lowerbound:
-        p = (a * q - 1) // b
-        if p*s > q*r:
+        # Given q, the largest p is ...
+        p = (a * q - 1) // b # p/q < a/b --> pb <= aq - 1
+        if p*s > q*r: # a better fraction? r/s < p/q
             s = q
             r = p
+            # When we consider the distance between p/q and a/b
+            # We can give the lower bound of q
+            # a/b - p/q = (aq - bp)/bq >= 1/bq
+            # p/q is better than r/s if:
+            # (as - rb)/bs > 1/bq
             lowerbound = s / (a*s - b*r)
         q -= 1
     

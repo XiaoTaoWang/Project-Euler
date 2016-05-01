@@ -83,5 +83,5 @@ def clever_count(maxn = 1000000):
     return phi.sum()
 
 if __name__ == '__main__':
-    #count = num_elements()
-    count = clever_count()
+    #count = num_elements() # ~22.4s
+    count = clever_count() # ~2.48s
