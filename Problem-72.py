@@ -77,11 +77,10 @@ def clever_count(maxn = 1000000):
     phi = np.arange(2, maxn+1, dtype = np.int64)
     for i in range(2, maxn+1):
         if phi[i-2] == i:
-            for j in range(i, maxn+1, i):
-                phi[j-2] = phi[j-2] * (i - 1) / i
+            phi[i-2:maxn-1:i] = phi[i-2:maxn-1:i] * (i - 1) / i
     
     return phi.sum()
 
 if __name__ == '__main__':
-    #count = num_elements() # ~22.4s
-    count = clever_count() # ~2.48s
+    count = num_elements() # ~14.3s
+    #count = clever_count() # ~400ms
