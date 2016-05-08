@@ -23,3 +23,19 @@ How many fractions lie between 1/3 and 1/2 in the sorted set of reduced
 proper fractions for d ≤ 12,000?
 
 """
+# Reference: Farey Sequence in WiKi:
+# https://en.wikipedia.org/wiki/Farey_sequence
+# The link gives an algorithm to generate the terms of F(n)
+def gen_farey(n = 12000, a = 1, b = 3, c = 4000, d = 11999, end = 1/2):
+    
+    count = 0
+    while c/d < end:
+        count += 1
+        k = (n + b) // d
+        a, b, c, d = c, d, k*c - a, k*d - b
+    
+    return count
+
+if __name__ == '__main__':
+    res = gen_farey()
+    
