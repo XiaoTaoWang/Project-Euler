@@ -36,3 +36,17 @@ How many chains, with a starting number below one million, contain exactly
 sixty non-repeating terms?
 
 """
+import math
+
+def facsum(num):
+    strnum = str(num)
+    Sum = 0
+    for d in strnum:
+        Sum += math.factorial(int(d))
+    
+    return Sum
+
+def count_chains(chainLen = 60, maxnum = 10**6):
+    
+    Dict = {}
+    

@@ -10,8 +10,8 @@ Problem 34:
 
 145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
 
-Find the sum of all numbers which are equal to the sum of the factorial of their
-digits.
+Find the sum of all numbers which are equal to the sum of the factorial of
+their digits.
 
 Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 
@@ -24,7 +24,7 @@ Note: as 1! = 1 and 2! = 2 are not sums they are not included.
 import math
 
 pool = []
-for num in xrange(10, 2540161):
+for num in range(10, 2540161):
     strnum = str(num)
     check = 0
     for n in strnum:
@@ -32,4 +32,4 @@ for num in xrange(10, 2540161):
     if check == num:
         pool.append(num)
 
-print sum(pool)
+print(sum(pool))
