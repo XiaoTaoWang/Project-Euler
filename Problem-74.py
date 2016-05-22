@@ -48,5 +48,29 @@ def facsum(num):
 
 def count_chains(chainLen = 60, maxnum = 10**6):
     
-    Dict = {}
+    cache = {}
+    count = 0
+    for start in range(2, maxnum):
+        if start in cache:
+            if cache[start] == 60:
+                count += 1
+                continue
+        tmpdict = {}
+        reverse = {}
+        cur = start
+        tick = 1
+        while not cur in tmpdict:
+            tmpdict[cur] = tick
+            reverse[tick] = cur
+            cur = facsum(cur)
+            tick += 1
+        for i in range(1, tmpdict[cur]+1):
+            cache[reverse[i]] = tick - i
+        if cache[start] == 60:
+            count += 1
+    
+    return count
+
+if __name__ == '__main__':
+    count = count_chains() # ~1min 8s
     
