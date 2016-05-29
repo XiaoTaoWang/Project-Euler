@@ -136,22 +136,18 @@ def factorN(n):
 #------------------------------------------------------------------------------
 def mergeCheck(num1, num2):
     check1 = num1 + num2 * 10**int(np.ceil(np.log10(num1)))
-    if not is_miller_rabin_prime(check1):
-        return False
     check2 = num2 + num1 * 10**int(np.ceil(np.log10(num2)))
     
-    if not is_miller_rabin_prime(check2):
-        return False
+    return is_miller_rabin_prime(check1) and is_miller_rabin_prime(check2)
     
-    return True
-    
-def main(searchmax = 20000, clique_size = 5):
+def main(searchmax = 20000):
     primes = findallprimes(searchmax)
-    Bool_matrix = np.zeros((primes.size, primes.size), dtype = bool)
+    Bool_matrix = np.zeros((primes.size, primes.size), dtype = np.bool)
     
     for i in xrange(primes.size-1):
         for j in xrange(i+1, primes.size):
-            Bool_matrix[i, j] = mergeCheck(primes[i], primes[j])
+            check = mergeCheck(int(primes[i]), int(primes[j]))
+            Bool_matrix[i, j] = check
     
     candidates = []
     for i1 in xrange(primes.size-4):
@@ -183,5 +179,5 @@ def main(searchmax = 20000, clique_size = 5):
     return lowest_five
 
 if __name__ == '__main__':
-    result = main(searchmax=10000)
-            
+    result = main(searchmax=10000) # ~20s
+    
