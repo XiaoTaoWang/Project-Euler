@@ -111,6 +111,9 @@ def search():
         chain = [v]
         pool = {i+1: digitBase.keys() for i in range(len(RawDict)-1)}
         Sets = [set([i]) for i in digitBase[v]]
+        # Make it possible for communications between loops
+        cache_pool = {}
+        cache_sets = {}
         candicates = pool[len(chain)][:]
         while len(chain) < len(RawDict):
             while len(candicates):
@@ -126,13 +129,16 @@ def search():
                     tmpsets = []
                     for rs in Sets:
                         for cs in curclass:
-                            union = cs | rs
-                            if len(union) > len(chain):
+                            union = set([cs]) | rs
+                            if len(union) >= len(chain):
                                 tmpsets.append(union)
                     if len(tmpsets):
+                        # Snapshot of the current loop
+                        cache_pool[len(chain)] = candicates
+                        cache_sets[len(chain)] = Sets
                         chain.append(c)
                         Sets = tmpsets
-                        cache = candicates
+                        # Initialization for next loop
                         candicates = pool[len(chain)][:]
                         break
             
@@ -141,10 +147,15 @@ def search():
                     break
                 else:
                     chain.pop()
-                    candicates = cache
+                    # Return to the stop point of the last loop
+                    candicates = cache_pool[len(chain)]
+                    Sets = cache_sets[len(chain)]
         
         if len(chain) == 6:
             check_last = chain[-1] % 100
             check_first = chain[0] // 100
             if check_first == check_last:
                 return chain
+
+if __name__ == '__main__':
+    chain = search()
