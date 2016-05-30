@@ -97,7 +97,7 @@ def search():
     
     RawDict = {3: list(genTriangle(1000, 9999)), 4: list(genSquare(1000, 9999)),
                5: list(genPentagonal(1000, 9999)), 6: list(genHexagonal(1000, 9999)),
-               7: list(genHeptagonal(1000, 9999)), 7: list(genOctagonal(1000, 9999))}
+               7: list(genHeptagonal(1000, 9999)), 8: list(genOctagonal(1000, 9999))}
     
     digitBase = {}
     for k in RawDict:
@@ -109,7 +109,7 @@ def search():
     
     for v in digitBase:
         chain = [v]
-        pool = {i+1: digitBase.keys() for i in range(len(RawDict)-1)}
+        pool = {i: digitBase.keys() for i in range(1,7)}
         Sets = [set([i]) for i in digitBase[v]]
         # Make it possible for communications between loops
         cache_pool = {}
@@ -130,7 +130,7 @@ def search():
                     for rs in Sets:
                         for cs in curclass:
                             union = set([cs]) | rs
-                            if len(union) >= len(chain):
+                            if len(union) > len(chain):
                                 tmpsets.append(union)
                     if len(tmpsets):
                         # Snapshot of the current loop
@@ -158,4 +158,4 @@ def search():
                 return chain
 
 if __name__ == '__main__':
-    chain = search()
+    chain = search() # ~15.3ms
