@@ -21,3 +21,34 @@ How many numbers below fifty million can be expressed as the sum of a prime
 square, prime cube, and prime fourth power?
 
 """
+import numpy as np
+
+def findallprimes(maxnum):
+    
+    Bool = np.ones(maxnum, dtype = bool)
+    Bool[0] = 0
+    maxiter = int(np.sqrt(maxnum))
+    for i in xrange(2, maxiter+1):
+        if Bool[i-1]:
+            # Sieve of Eratosthenes
+            Bool[np.arange(2*i-1, maxnum, i)] = False
+    
+    return np.where(Bool)[0] + 1
+
+def bruteSearch():
+    upperbound = 50000000
+    primes = findallprimes(int(np.ceil(np.sqrt(upperbound))))
+    results = set()
+    for i in primes:
+        for j in primes:
+            for k in primes:
+                tmpnum = i**2 + j**3 + k**4
+                if tmpnum < upperbound:
+                    results.add(tmpnum)
+                else:
+                    break
+    
+    return len(results)
+
+if __name__ == '__main__':
+    res = bruteSearch() # ~2.28s
