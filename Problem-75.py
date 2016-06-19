@@ -30,3 +30,52 @@ Given that L is the length of the wire, for how many values of L ≤ 1,500,000
 can exactly one integer sided right angle triangle be formed?
 
 """
+# Notice that we have tackled a similar problem before (Problem 39).
+
+import math
+from collections import defaultdict
+
+def euclidean(x, y):
+    
+    assert x > 0, y > 0
+    
+    if x < y:
+        x, y = y, x
+    
+    mod = x % y
+    while mod != 0:
+        x, y = y, mod
+        mod = x % y
+    
+    return y
+
+def search(maxinum):
+    
+    container = defaultdict(int)
+    maxiter = int(math.sqrt(maxinum))
+    for n in range(1, maxiter + 1):
+        for m in range(n+1, maxiter + 1):
+            mod = euclidean(m, n)
+            if (mod == 1) and ((m - n) % 2 != 0): # conditions for primitive solutions
+                k = 1
+                while True:
+                    # Use the Euclid's foluma to generate Pythagorean triplets
+                    a = k * (m**2 - n**2)
+                    b = 2 * m * n * k
+                    c = k * (m**2 + n**2)
+                    if a + b + c > maxinum:
+                        break
+                    else:
+                        container[a+b+c] += 1
+                    k += 1 # non primitive triplets?
+    
+    count = 0
+    for Len in container:
+        if container[Len]==1:
+            count += 1
+    
+    return count
+
+
+if __name__ == '__main__':
+    count = search(1500000) # ~1.71s
