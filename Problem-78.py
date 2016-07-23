@@ -62,5 +62,5 @@ def worker():
     return n
 
 if __name__ == '__main__':
-    res = worker()
+    res = worker() # ~11.7s
         
