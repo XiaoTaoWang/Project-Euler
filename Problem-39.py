@@ -16,6 +16,7 @@ If p is the perimeter of a right angle triangle with integral length sides,
 For which value of p ≤ 1000, is the number of solutions maximised?
 
 """
+# Recall problem 9
 import math
 
 def euclidean(x, y):

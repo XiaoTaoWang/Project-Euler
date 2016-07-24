@@ -30,7 +30,7 @@ Given that L is the length of the wire, for how many values of L ≤ 1,500,000
 can exactly one integer sided right angle triangle be formed?
 
 """
-# Notice that we have tackled a similar problem before (Problem 39).
+# Notice that we have tackled a similar problem before (Problem 9 and 39).
 
 import math
 from collections import defaultdict
