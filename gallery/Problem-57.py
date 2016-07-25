@@ -50,4 +50,4 @@ def count(maxexp = 1000):
     return num
 
 if __name__ == '__main__':
-    print(count())
+    print(count()) # ~3.51ms

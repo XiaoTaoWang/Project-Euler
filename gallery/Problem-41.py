@@ -16,6 +16,10 @@ What is the largest n-digit pandigital prime that exists?
 
 """
 # Here's is a trick to lower the upper bound
+# A number is divisible by 3 if the digit sum of the number is divisible by 3.
+# 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45
+# 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36
+# 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
 import numpy as np
 
 def findallprimes(maxnum):
@@ -48,4 +52,4 @@ def search(maxnum):
     return maxpan
 
 if __name__ == '__main__':
-    print(search(7654321))
+    print(search(7654321)) # ~3.86s

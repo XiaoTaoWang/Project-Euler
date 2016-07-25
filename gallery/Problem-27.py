@@ -65,6 +65,6 @@ def findquad(maxa = 1000, maxb = 1000):
     return resa, resb, maxlen
 
 if __name__ == '__main__':
-    print findquad()
+    print findquad() # ~267ms
     
     

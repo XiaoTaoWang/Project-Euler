@@ -193,6 +193,6 @@ if __name__ == '__main__':
             solution[r[0]][r[1]] = r[2]
         count += int(''.join(solution[0][:3]))
     elapse = time.time() - start
-    print('Time elapse: %.4gs' % elapse)
+    print('Time elapse: %.4gs' % elapse) # ~1.03s
         
         

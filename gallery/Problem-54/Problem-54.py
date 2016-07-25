@@ -188,4 +188,4 @@ def workcore(filename):
     return count, win
 
 if __name__ == '__main__':
-    res = workcore('p054_poker.txt')
+    res = workcore('p054_poker.txt') # ~40.8ms

@@ -31,4 +31,4 @@ def search():
     return count
 
 if __name__ == '__main__':
-    print search()
+    print search() # ~12.1us

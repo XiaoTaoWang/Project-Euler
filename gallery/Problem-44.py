@@ -50,4 +50,4 @@ def findpair():
 
 if __name__ == '__main__':
     
-    print findpair()
+    print findpair() # ~1.71s

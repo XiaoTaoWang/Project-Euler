@@ -33,3 +33,5 @@ for num in range(10, 2540161):
         pool.append(num)
 
 print(sum(pool))
+
+# ~12.8s

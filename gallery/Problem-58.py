@@ -190,4 +190,4 @@ def spiralPrimes(ratio = 0.1, maxfactor = 30000, method = 'Miller-Rabin'):
         n += 2
 
 if __name__ == '__main__':
-    print(spiralPrimes())
+    print(spiralPrimes()) # ~844ms

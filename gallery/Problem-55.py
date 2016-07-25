@@ -60,4 +60,4 @@ def findLychrel(maxnum = 10000, maxiter = 50):
     return count
 
 if __name__ == '__main__':
-    print(findLychrel())
+    print(findLychrel()) # ~76.2ms

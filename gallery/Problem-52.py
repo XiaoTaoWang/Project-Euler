@@ -41,4 +41,4 @@ def search():
         start *= 10
 
 if __name__ == '__main__':
-    print(search())
+    print(search()) # ~139ms

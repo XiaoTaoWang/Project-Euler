@@ -44,4 +44,4 @@ def count(min_n = 23, max_n = 100, mincom = 1000000):
     return num
 
 if __name__ == '__main__':
-    print(count())
+    print(count()) # ~22.2ms

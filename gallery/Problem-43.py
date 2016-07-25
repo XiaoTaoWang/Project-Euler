@@ -54,4 +54,4 @@ def sumPan():
     return Sum
 
 if __name__ == '__main__':
-    print(sumPan())
+    print(sumPan()) # ~1.91s

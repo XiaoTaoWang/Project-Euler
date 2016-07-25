@@ -45,4 +45,4 @@ def largest():
     return tmp
 
 if __name__ == '__main__':
-    print(largest())
+    print(largest()) # ~5.47ms

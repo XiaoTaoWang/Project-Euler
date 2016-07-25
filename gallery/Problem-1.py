@@ -27,4 +27,4 @@ def findmultiples(maxnum, *args):
     return res
 
 if __name__ == '__main__':
-    print findmultiples(1000, 3, 5)
+    print findmultiples(1000, 3, 5) # ~149us

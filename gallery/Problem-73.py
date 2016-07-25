@@ -37,5 +37,5 @@ def gen_farey(n = 12000, a = 1, b = 3, c = 4000, d = 11999, end = 1/2):
     return count
 
 if __name__ == '__main__':
-    res = gen_farey()
+    res = gen_farey() # ~180ns
     

@@ -28,4 +28,4 @@ def fib(a, b, maxnum = 4000000):
 if __name__ == '__main__':
     
     gen = fib(1, 2)
-    print sum(gen)
+    print sum(gen) # ~3.8us

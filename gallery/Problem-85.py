@@ -31,4 +31,4 @@ def find_solution(X, Y, obj = 2000000):
     return solution, dis
 
 if __name__ == '__main__':
-    res = find_solution(2000, 2000)
+    res = find_solution(2000, 2000) # ~1.71s

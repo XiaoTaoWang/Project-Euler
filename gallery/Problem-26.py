@@ -60,4 +60,5 @@ if __name__ == '__main__':
             res = num
     
     print res, maxlen
-        
+    
+    # ~4.42ms

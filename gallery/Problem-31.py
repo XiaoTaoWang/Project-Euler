@@ -72,6 +72,6 @@ def dynamic(coin):
 
 
 if __name__ == '__main__':
-    print bruteforce(u'£2')
-    print dynamic(u'£2')
+    print bruteforce(u'£2') # ~4.67ms
+    print dynamic(u'£2') # ~123us
             

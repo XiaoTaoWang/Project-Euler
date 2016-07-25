@@ -36,4 +36,4 @@ def dynamic(total):
     return counts[-1]
 
 if __name__ == '__main__':
-    res = dynamic(100)
+    res = dynamic(100) # ~520us

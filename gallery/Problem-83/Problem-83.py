@@ -93,7 +93,7 @@ def my_Dijkstra(data, source, target):
         
         for v in adjacency[u]:
             if not v in dist:
-                dist[v] = math.inf
+                dist[v] = float('inf')
             alt = dist[u] + adjacency[u][v]['weight']
             if alt < dist[v]:
                 dist[v] = alt
@@ -116,4 +116,4 @@ def my_Dijkstra(data, source, target):
 if __name__ == '__main__':
     
     data = readdata('p083_matrix.txt')
-    length, path = my_Dijkstra(data, (-1,-1), (79, 79))
+    length, path = my_Dijkstra(data, (-1,-1), (79, 79)) # ~60ms

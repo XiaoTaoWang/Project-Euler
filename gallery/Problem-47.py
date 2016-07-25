@@ -77,4 +77,4 @@ def findFours(start = 647, maxnum = 1000000):
         n += 1
 
 if __name__ == '__main__':
-    print findFours()
+    print findFours() # ~2.29s

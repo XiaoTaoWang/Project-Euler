@@ -104,5 +104,5 @@ if __name__ == '__main__':
     01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
     """
     data = readdata(String)
-    print maxprod(data, 4)
+    print maxprod(data, 4) # ~3.39ms
 

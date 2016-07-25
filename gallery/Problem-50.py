@@ -57,4 +57,4 @@ def mostConsecutive(maxnum):
     return most, res
 
 if __name__ == '__main__':
-    print mostConsecutive(1000000)
+    print mostConsecutive(1000000) # ~89.3ms

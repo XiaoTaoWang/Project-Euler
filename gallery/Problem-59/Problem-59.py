@@ -64,5 +64,5 @@ def decrypt(message, keylen, mostfreq = ' '):
 
 if __name__ == '__main__':
     message = readcypher('p059_cipher.txt')
-    res = decrypt(message, 3)
+    res = decrypt(message, 3) # ~651us
     

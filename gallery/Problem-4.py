@@ -32,5 +32,5 @@ def bruteforce():
 
 if __name__ == '__main__':
     
-    res = bruteforce()
+    res = bruteforce() # ~156ms
     print 'The largest palindrome is {0}, which is the product of {1} and {2}'.format(*res)

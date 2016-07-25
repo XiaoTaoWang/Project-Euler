@@ -40,4 +40,4 @@ def findnum(start = 287):
 
 if __name__ == '__main__':
     
-    print findnum()
+    print findnum() # ~23.3ms

@@ -66,6 +66,6 @@ def num_of_digits(n = 100):
     return sum(map(int, str(n2)))
 
 if __name__ == '__main__':
-    res = num_of_digits()
+    res = num_of_digits() # ~66us
     
     

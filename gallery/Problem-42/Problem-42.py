@@ -50,5 +50,5 @@ def triangleWord(data):
 
 if __name__ == '__main__':
     data = readdata('p042_words.txt')
-    print(triangleWord(data))
+    print(triangleWord(data)) # ~1.87ms
     

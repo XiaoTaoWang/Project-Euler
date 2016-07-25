@@ -54,4 +54,4 @@ def count(xmax, ymax):
     return special+regular
 
 if __name__ == '__main__':
-    res = count(50, 50)
+    res = count(50, 50) # ~1.66ms

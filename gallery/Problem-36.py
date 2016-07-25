@@ -33,4 +33,4 @@ def countPalindromes(maxnum):
     return count
 
 if __name__ == '__main__':
-    print(countPalindromes(1000000))
+    print(countPalindromes(1000000)) # ~389ms

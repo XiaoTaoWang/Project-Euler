@@ -39,5 +39,5 @@ def findcube(start):
         start += 1
 
 if __name__ == '__main__':
-    res = findcube(345)
+    res = findcube(345) # ~53.5ms
         

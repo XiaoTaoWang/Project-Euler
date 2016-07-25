@@ -39,4 +39,4 @@ def solve(pos):
     return prod
 
 if __name__ == '__main__':
-    print(solve([1,10,100,1000,10000,100000,1000000]))
+    print(solve([1,10,100,1000,10000,100000,1000000])) # ~71.2ms

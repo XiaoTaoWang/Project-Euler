@@ -52,5 +52,5 @@ def alterScheme(num):
 
 if __name__ == '__main__':
 
-    print maxprimefactor(600851475143)
-    print alterScheme(600851475143)
+    print maxprimefactor(600851475143) # ~142ms
+    print alterScheme(600851475143) # ~474us

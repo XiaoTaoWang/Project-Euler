@@ -60,5 +60,5 @@ def findseq():
                     return a, b, c
 
 if __name__ == '__main__':
-    print findseq()
+    print findseq() # ~165ms
     

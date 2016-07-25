@@ -66,3 +66,5 @@ if __name__ == '__main__':
     total = np.arange(1, 28124)
     
     print total[mask].sum()
+    
+    # Time elapse: ~3.8s

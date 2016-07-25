@@ -89,4 +89,4 @@ def workcore(strings):
 if __name__ == '__main__':
     
     strings = [line.rstrip() for line in open('p089_roman.txt')]
-    saved = workcore(strings)
+    saved = workcore(strings) # ~5.79ms

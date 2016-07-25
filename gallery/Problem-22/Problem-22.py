@@ -47,5 +47,5 @@ def namescore(data):
 if __name__ == '__main__':
     
     data = readdata('p022_names.txt')
-    print namescore(data)
+    print namescore(data) # ~5.51ms
     

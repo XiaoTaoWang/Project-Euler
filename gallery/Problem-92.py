@@ -64,6 +64,6 @@ def count(maxnum = 10000000):
     return stat, cache
 
 if __name__ == '__main__':
-    res = count(10000000)
+    res = count(10000000) # ~56.9s
                 
             

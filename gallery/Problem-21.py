@@ -55,4 +55,4 @@ def brutefind(maxnum):
     return sum(map(sum, pairs))
 
 if __name__ == '__main__':
-    print(brutefind(10000))
+    print(brutefind(10000)) # ~56.3ms

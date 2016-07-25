@@ -41,4 +41,4 @@ def getprime(idx):
 
 if __name__ == '__main__':
     
-    print getprime(10001)
+    print getprime(10001) # ~195ms

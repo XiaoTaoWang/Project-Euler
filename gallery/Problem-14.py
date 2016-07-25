@@ -55,5 +55,5 @@ def longest(maxnum):
 
 if __name__ == '__main__':
     
-    start, chain = longest(1000000)
+    start, chain = longest(1000000) # ~8.68s
     print 'If we start at {0}, we will get the longest chain {1}'.format(start, chain)

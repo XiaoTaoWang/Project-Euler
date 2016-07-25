@@ -172,5 +172,5 @@ if __name__ == '__main__':
     stats = simulation(100, 1000)
     reverse_view = {v:k for k,v in stats.items()}
     elapse = time.time() - start
-    print('Time elapse: %.4gs' % elapse)
+    print('Time elapse: %.4gs' % elapse) # ~285ms
     

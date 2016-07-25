@@ -62,4 +62,4 @@ def dynamic(data, totalsum):
 if __name__ == '__main__':
     
     data, totalsum = readdata('p081_matrix.txt')
-    minimum, path = dynamic(data, totalsum)
+    minimum, path = dynamic(data, totalsum) # ~22.4ms

@@ -24,4 +24,4 @@ def solveMatrix(row, col):
     return matrix[-1, -1]
 
 if __name__ == '__main__':
-    print(solveMatrix(20, 20))
+    print(solveMatrix(20, 20)) # ~954us

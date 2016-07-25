@@ -93,4 +93,4 @@ def findpatterns(digitnum = 5):
     return Res
 
 if __name__ == '__main__':
-    print findpatterns(6)
+    print findpatterns(6) # ~61ms

@@ -27,3 +27,5 @@ for count, mem in enumerate(per):
     if count == (999999):
         print mem
         break
+
+# ~108ms

@@ -62,4 +62,4 @@ def bruteforce(facnum):
 
 if __name__ == '__main__':
     
-    num = bruteforce(500)
+    num = bruteforce(500) # ~3.46s

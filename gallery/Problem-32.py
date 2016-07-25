@@ -54,5 +54,5 @@ def findall():
 
 if __name__ == '__main__':
     
-    print findall()
+    print findall() # ~1.24s
     

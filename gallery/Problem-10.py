@@ -29,7 +29,7 @@ def findallprimes(maxnum):
     return ori[Bool]
 
 if __name__ == '__main__':
-    primes = findallprimes(2000000)
+    primes = findallprimes(2000000) # ~45ms
     Sum = 0L
     for p in primes:
         Sum += p

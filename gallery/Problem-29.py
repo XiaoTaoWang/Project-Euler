@@ -31,3 +31,5 @@ for a in xrange(2, 101):
         res.add(a**b)
 
 print len(res)
+
+# ~15.9ms

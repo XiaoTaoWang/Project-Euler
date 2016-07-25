@@ -26,3 +26,4 @@ if __name__ == '__main__':
         if len(digits) == 1000:
             print(i+1)
             break
+    # ~38.6ms

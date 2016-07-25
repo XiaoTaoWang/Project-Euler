@@ -66,4 +66,4 @@ def find_fraction(a, b, maxdenom = 1000000):
     return r, s
 
 if __name__ == '__main__':
-    res = find_fraction(3, 7)
+    res = find_fraction(3, 7) # ~2.05us

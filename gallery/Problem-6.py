@@ -35,4 +35,4 @@ def diff(maxn):
 
 if __name__ == '__main__':
     
-    print diff(100)
+    print diff(100) # ~309ns

@@ -50,4 +50,4 @@ def workcore(maxn = 10000):
     return count
 
 if __name__ == '__main__':
-    count = workcore()
+    count = workcore() # ~138ms

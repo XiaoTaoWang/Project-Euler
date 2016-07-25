@@ -65,4 +65,4 @@ def itercheck(maxnum = 10000):
 
 if __name__ == '__main__':
     
-    print itercheck()
+    print itercheck() # ~3.37s

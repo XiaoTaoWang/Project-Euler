@@ -70,4 +70,4 @@ def dynamic(data):
 if __name__ == '__main__':
     
     data = readdata('p082_matrix.txt')
-    res = dynamic(data)
+    res = dynamic(data) # ~1.26s

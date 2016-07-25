@@ -62,6 +62,6 @@ def cirPrimes(maxnum):
     return cirList
 
 if __name__ == '__main__':
-    L = cirPrimes(1000000)
+    L = cirPrimes(1000000) # ~239ms
         
 

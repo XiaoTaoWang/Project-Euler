@@ -67,7 +67,7 @@ def findall():
 
 if __name__ == '__main__':
     
-    print sum(findall())
+    print sum(findall()) # ~5.44ms
     
     
             

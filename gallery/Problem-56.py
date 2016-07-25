@@ -32,4 +32,4 @@ def maxDigitSum(maxa = 100, maxb = 100):
     return maxsum
 
 if __name__ == '__main__':
-    print(maxDigitSum())
+    print(maxDigitSum()) # ~383ms
