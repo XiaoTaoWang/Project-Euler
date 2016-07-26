@@ -29,7 +29,7 @@ Now, enjoy yourself！
 Gallery
 ========
 Category
---------
+++++++++
 - `Combination and permutation`_
 - `Dynamic programming`_
 - `Encryption and decryption`_
@@ -44,31 +44,31 @@ Category
 - `Unclassified`_
 
 Combination and permutation
----------------------------
++++++++++++++++++++++++++++
 
 Dynamic programming
--------------------
++++++++++++++++++++
 
 Encryption and decryption
--------------------------
++++++++++++++++++++++++++
 
 Figurate number
----------------
+++++++++++++++++
 
 Fraction and decimals
----------------------
++++++++++++++++++++++
 
 Games
------
++++++
 
 Interesting number games
-------------------------
+++++++++++++++++++++++++
 
 Prime related
---------------
+++++++++++++++
 
 Pythagorean triplet
--------------------
++++++++++++++++++++
 
 Recursive definition
 --------------------
