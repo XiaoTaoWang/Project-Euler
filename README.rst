@@ -1,5 +1,5 @@
 About Project Euler
-*******************
+===================
 (Pasted from the Project Euler homepage)
 Project Euler is a series of challenging mathematical/computer programming problems that will
 require more than just mathematical insights to solve. Although mathematics will help you arrive
@@ -11,7 +11,7 @@ the inquiring mind to delve into unfamiliar areas and learn new concepts in a fu
 context.
 
 Inspiration
-***********
+============
 I heard about Project Euler completely by accident. I was fascinated by the beauty features of
 amicable numbers, and there happened to be a related problem(`Problem 21 <https://projecteuler.net/problem=21>`_)
 distributed by Project Euler. However, what I have learned is far beyond what I expected.
@@ -27,7 +27,9 @@ themed with the art of computer programming?
 Now, enjoy yourself！
 
 Gallery
-*******
+========
+Category
+--------
 - `Combination and permutation`_
 - `Dynamic programming`_
 - `Encryption and decryption`_
