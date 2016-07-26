@@ -66,7 +66,8 @@ Items for each work:
 
 Combinations and permutations
 ----------------------------
-1.Problem 24: Lexicographic permutations
+1.Problem 24: Lexicographic permutations:
+
 task
     What is the millionth lexicographic permutation of the digits 0-9?
 
