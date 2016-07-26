@@ -1,4 +1,4 @@
-About Project Euler
+﻿About Project Euler
 ===================
 (Pasted from the Project Euler homepage)
 Project Euler is a series of challenging mathematical/computer programming problems that will
@@ -37,7 +37,7 @@ Category
 - `Fraction and decimals`_
 - `Games`_
 - `Interesting number games`_
-- `Prime related`_
+- `Prime number related`_
 - `Pythagorean triplet`_
 - `Recursive definition`_
 - `Totient function`_
@@ -52,8 +52,8 @@ Items for each work
 - programming aspect
     Related programming concept
 - class
-    - Mathematics: mathematical insights may be more important for the corresponding problem
-    - Programming: your programming skills outweighs the mathematics
+    - mathematics: mathematical insights may be more important for the corresponding problem
+    - programming: your programming skills outweighs the mathematics
 - difficulty
     - ★: pretty easy, several minutes were enough
     - ★★: easy, within an hour
@@ -210,15 +210,234 @@ thinking behind it fit for many problems in Project Euler.
 
 Encryption and decryption
 -------------------------
+Passcode, encryption, and decryption are almost everywhere during modern information transmission.
+Several problems have direct connections with this topic.
+
+- `Problem 59: XOR decryption <gallery/Encryption-and-decryption/Problem-59/Problem-59.py>`_:
+
+  - task
+      Can you decrypt the XOR encrypted ASCII code given that the encryption key consists of three
+      lower case characters?
+  - key point
+      The most frequent character in English is the space.
+  - programming
+      Python XOR operation(^)
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 79: Passcode derivation <gallery/Encryption-and-decryption/Problem-79/Problem-79.py>`_:
+
+  - task
+      Deduce the whole secret passcode by analysing historical login attempts.
+  - key point
+      topological sorting
+  - programming
+      *set*, *dict*, *reduce*, *generator*
+  - class
+      programming
+  - difficulty
+      ★★★★
+
 
 Figurate number
 ---------------
+A figurate number is a number represented as a regular and discrete geometric pattern(e.g. dots) such
+as polygonal number or a polyhedral number. Triangle, square, pentagonal, hexagonal, heptagonal, and
+octagonal numbers are involved in Project Euler.
+
+- `Problem 42: Coded triangle numbers <gallery/Figurate-number/Problem-42/Problem-42.py>`_:
+
+  - task
+      According to the definition given in the problem statement, how many triangle words does
+      the list contain?
+  - key point
+      ascii_uppercase defined in *string* standard library
+  - programming
+      *dict*, list comprehension, dot notation
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 44: Pentagon numbers <gallery/Figurate-number/Problem-44.py>`_:
+
+  - task
+      Find the pair of pentagonal numbers for which their sum and difference are also
+      pentagonal and the difference is minimised.
+  - key point
+      the difference of the first eligible pair is minimised
+  - programming
+      while loop, return statement, dead code
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 45: Triangular, pentagonal, and hexagonal <gallery/Figurate-number/Problem-45.py>`_:
+
+  - task
+      After 40755, find the next triangle number that is also pentagonal and hexagonal.
+  - key point
+      When n is odd, the triangle number is a hexagonal number.
+  - programming
+      while loop, return statement, dead code
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 61: Cyclical figurate numbers <gallery/Figurate-number/Problem-61.py>`_:
+
+  - task
+      Find the sum of the only ordered set of six cyclic 4-digit numbers for which each polygonal
+      type: triangle, square, pentagonal, hexagonal, heptagonal, and octagonal, is represented by
+      a different number in the set.
+  - key point
+      brute force
+  - programming
+      generator, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★★
+
 
 Fraction and decimals
 ---------------------
+As you might guess, this category is full of mathematics. You may feel a bit boring at the beginning,
+just hold on, and a lot of wonders will come.
+
+- `Problem 26: Reciprocal cycles <gallery/Fraction-and-decimals/Problem-26.py>`_:
+
+  - task
+      Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal
+      fraction part.
+  - key point
+      Simulate the long division procedure and keep track of the remainders, recurring cycle can be
+      easily obtained. Larger d may generate longer recurring cycle.
+  - programming
+      flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 57: Square root convergents <gallery/Fraction-and-decimals/Problem-57.py>`_:
+
+  - task
+      Investigate the expansions of the continued fraction of square root of 2, in the first 1000
+      expansions, how many fractions contain a numerator with more digits than denominator?
+  - key point
+      Delve the calculation procedure of the iterations, and try to find some patterns for
+      generating numerator and denominator recursively.
+  - programming
+      for loop
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 64: Odd period square roots <gallery/Fraction-and-decimals/Problem-64.py>`_:
+
+  - task
+      How many continued fractions for N ≤ 10000 have an odd period?
+  - key point
+      There's an iterative algorithm for non perfect squares to calculate continued fraction
+      expansions
+  - programming
+      flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★★★
+
+- `Problem 65: Convergents of e <gallery/Fraction-and-decimals/Problem-65.py>`_:
+
+  - task
+      Find the sum of digits in the numerator of the 100th convergent of the continued
+      fraction for e.
+  - key point
+      I found a recursive formula about the numerator: n(k) = c(k) * n(k-1) + n(k-2)
+  - programming
+      generator
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 66: Diophantine equation <gallery/Fraction-and-decimals/Problem-66/Problem-66.py>`_:
+
+  - task
+      Investigate the Diophantine equation x^2 − Dy^2 = 1.
+  - key point
+      Fundamental solution of Pell's equation
+  - programming
+      flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★★★
+
 
 Games
 -----
+Games excite us, and computing make us crazy!
+
+- `Problem 54: Poker hands <gallery/Games/Problem-54/Problem-54.py>`_:
+
+  - task
+      Game poker: how many hands does Player 1 win?
+  - key point
+      The rules are clear, just simulate the game.
+  - programming
+      *class*, operator overloading
+  - class
+      programming
+  - difficulty
+      ★★★★
+
+- `Problem 68: Magic 5-gon ring <gallery/Games/Problem-68.py>`_:
+
+  - task
+      What is the maximum 16-digit string for a “magic” 5-gon ring?
+  - key point
+      put 1,2,3,4,5 to the inner ring, and 6,7,8,9,10 to the outer ring
+  - programming
+      *class*, *itertools* standard library
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 84: Monopoly odds <gallery/Games/Problem-84.py>`_:
+
+  - task
+      In the game Monopoly(大富翁), find the three most frequent squares using 4-sided dice.
+  - key point
+      Simulation
+  - programming
+      generator, recursive function, code, *random* and *collections* standard library
+      dict comprehension
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 96: Su Doku <gallery/Games/Problem-96/Problem-96.py>`_:
+
+  - task
+      Write a solver for 9×9 Su Doku
+  - key point
+      exact cover problem, Algorithm X
+  - programming
+      recursive function, generator, *set*, *dict*, *list*, object serializarion
+  - class
+      programming
+  - difficulty
+      ★★★★★
+
 
 Interesting number games
 ------------------------

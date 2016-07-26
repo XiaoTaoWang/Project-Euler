@@ -11,7 +11,7 @@ Problem 64:
 https://projecteuler.net/problem=64
 
 """
-# Refer to wiki, there's a iterative algorithm for continued fraction
+# Refer to wiki, there's an iterative algorithm for continued fraction
 # expansions
 import math
 
