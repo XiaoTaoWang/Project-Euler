@@ -122,7 +122,7 @@ thinking behind it fit for many problems in Project Euler.
       Count the number of routes through a 20×20 grid
   - key point
       the problem can be split into subproblems, and the result from the last stage can be passed
-	to the current stage
+      to the current stage
   - programming aspect
       for loop, matrix representation and operation
   - class
@@ -147,15 +147,15 @@ thinking behind it fit for many problems in Project Euler.
 
   - task
       Problems 31 asks how many different ways can £2 be made using any number of coins?
-	And Problem 76 asks how many different ways can 100 be written as a sum of at least
-	two positive integers. Problem 77 is the same as 76 except additional prime number
-	limitation. Overall we need to find an algorithm for counting ways of partitioning
-	numbers.
+      And Problem 76 asks how many different ways can 100 be written as a sum of at least
+      two positive integers. Problem 77 is the same as 76 except additional prime number
+      limitation. Overall we need to find an algorithm for counting ways of partitioning
+      numbers.
   - key point
       If I split 100 into 99 and 1, then the problem becomes a little smaller, and I ask
-	myself how many ways can 99 be expressed as sum of much smaller integers? And then 98,
-	then 97, ..., in the end, the problem turns out to be trivial, and all we need to anwser
-	is how many ways to partition 2.
+      myself how many ways can 99 be expressed as sum of much smaller integers? And then 98,
+      then 97, ..., in the end, the problem turns out to be trivial, and all we need to anwser
+      is how many ways to partition 2.
   - programming
       for loop, *list*
   - class
