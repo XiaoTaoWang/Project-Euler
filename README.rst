@@ -52,9 +52,11 @@ Items for each work
 - programming aspect
   Related programming concept
 - class
+
   - Mathematics: mathematical insights may be more important for the corresponding problem
   - Programming: your programming skills outweighs the mathematics
 - difficulty
+
   - ★: pretty easy, several minutes were enough
   - ★★: easy, within an hour
 
