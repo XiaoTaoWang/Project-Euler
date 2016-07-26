@@ -44,6 +44,7 @@ Category
 - `Unclassified`_
 
 Items for each work:
+
 +--------------------+-------------------------------------------------------------------------------------------------+
 | Feature            | Explanation                                                                                     |
 +====================+=================================================================================================+
@@ -64,15 +65,15 @@ Combinations and permutations
 ----------------------------
 - `Problem 24: Lexicographic permutations <https://github.com/XiaoTaoWang/Project-Euler/blob/master/gallery/Combinations-and-permutations/Problem-24.py>`_:
   - task
-    What is the millionth lexicographic permutation of the digits 0-9?
+      What is the millionth lexicographic permutation of the digits 0-9?
   - key point
-    Quite easy for Python using *itertools* standard library
+      Quite easy for Python using *itertools* standard library
   - programming aspect
-    for loop
+      for loop
   - class
-    programming
+      programming
   - difficulty
-    ★
+      ★
 
 Dynamic programming
 --------------------
