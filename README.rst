@@ -43,8 +43,7 @@ Category
 - `Totient function`_
 - `Unclassified`_
 
-Items for each work
--------------------
+**Items for each work:**
 
 +--------------------+-------------------------------------------------------------------------------------------------+
 | Feature            | Explanation                                                                                     |
