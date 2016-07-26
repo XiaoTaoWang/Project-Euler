@@ -14,8 +14,9 @@ Inspiration
 ***********
 I heard about Project Euler completely by accident. I was fascinated by the beauty features of
 amicable numbers, and there happened to be a related problem(`Problem 21 <https://projecteuler.net/problem=21>`_)
-distributed by Project Euler. Project Euler shows a new world to me, a world of mathematics and
-algorithm, full of unknowns and miracles. It's so attractive that I can't stop myself exporing it.
+distributed by Project Euler. However, what I have learned is far beyond what I expected.
+A new world is open for me, a world of mathematics and algorithm, full of unknowns and miracles.
+It's so attractive that I can't stop myself exporing it.
 
 In the beginning, I just solved those problems and uploaded my Python solutions named with
 the official problem indices. However, as I approached, I found the problems are not independent
@@ -23,7 +24,55 @@ and many are closely related each other, so I reorganized the work and categoriz
 (and also solutions). After that, ah, doesn't it like a gallery, a space for my little programs,
 themed with the art of computer programming?
 
-So, enjoy yourself！
+Now, enjoy yourself！
 
 Gallery
 *******
+- `Combination and permutation`_
+- `Dynamic programming`_
+- `Encryption and decryption`_
+- `Figurate number`_
+- `Fraction and decimals`_
+- `Games`_
+- `Interesting number games`_
+- `Prime related`_
+- `Pythagorean triplet`_
+- `Recursive definition`_
+- `Totient function`_
+- `Unclassified`_
+
+Combination and permutation
+---------------------------
+
+Dynamic programming
+-------------------
+
+Encryption and decryption
+-------------------------
+
+Figurate number
+---------------
+
+Fraction and decimals
+---------------------
+
+Games
+-----
+
+Interesting number games
+------------------------
+
+Prime related
+--------------
+
+Pythagorean triplet
+-------------------
+
+Recursive definition
+--------------------
+
+Totient function
+----------------
+
+Unclassified
+------------
