@@ -46,10 +46,13 @@ Category
 Items for each work
 ----------------------
 - task
+
   Simple description of original problem
 - key point
+
   The key point (core idea) for me to solve the problem
 - programming aspect
+
   Related programming concept
 - class
 
