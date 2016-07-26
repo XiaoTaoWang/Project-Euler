@@ -66,7 +66,7 @@ Items for each work
 
 Combinations and permutations
 ----------------------------
-- `Problem 24: Lexicographic permutations <https://github.com/XiaoTaoWang/Project-Euler/blob/master/gallery/Combinations-and-permutations/Problem-24.py>`_:
+- `Problem 24: Lexicographic permutations <gallery/Combinations-and-permutations/Problem-24.py>`_:
   
   - task
       What is the millionth lexicographic permutation of the digits 0-9?
@@ -74,6 +74,19 @@ Combinations and permutations
       Quite easy for Python using *itertools* standard library
   - programming aspect
       for loop
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 29: Distinct powers <gallery/Combinations-and-permutations/Problem-29.py>`_:
+
+  - task
+      How many distinct numbers can a^b generate for 2 ≤ a ≤ 100 and 2 ≤ b ≤ 100?
+  - key point
+      Two layers of loops, *set* for removing repeats
+  - programming aspect
+      for loop, data structure selection
   - class
       programming
   - difficulty
