@@ -46,8 +46,6 @@ Category
 Items for each work
 ----------------------
 +--------------------+-------------------------------------------------------------------------------------------------+
-| Feature            | Explanation                                                                                     |
-+====================+=================================================================================================+
 | task               | Simple description of original problem                                                          |
 +--------------------+-------------------------------------------------------------------------------------------------+
 | key point          | The key point (core idea) for me to solve the problem                                           |
@@ -56,6 +54,8 @@ Items for each work
 +--------------------+-------------------------------------------------------------------------------------------------+
 | class              | - Mathematics: mathematical insights may be more important for the corresponding problem        |
 |                    | - Programming: your programming skills outweighs the mathematics                                |
++--------------------+-------------------------------------------------------------------------------------------------+
+| difficulty         | - ★: pretty easy, several minutes were enough                                                  |
 +--------------------+-------------------------------------------------------------------------------------------------+
 
 .. note:: You'll quickly find (or at least outline) a brute-force algorithm for many problems.
