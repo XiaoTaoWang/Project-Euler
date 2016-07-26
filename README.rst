@@ -66,6 +66,10 @@ Items for each work
 
 Combinations and permutations
 ----------------------------
+Combinations and permutations play a vital role in mathematics and computer science. It's
+prerequisite to Probability, Graph Theory, etc. Project Euler do include several problems in this
+field.
+
 - `Problem 24: Lexicographic permutations <gallery/Combinations-and-permutations/Problem-24.py>`_:
   
   - task
@@ -92,8 +96,72 @@ Combinations and permutations
   - difficulty
       ★
 
+- `Problem 53: Combinatoric selections <gallery/Combinations-and-permutations/Problem-53.py>`_:
+
+  - task
+      How many values of nCr, for 1 ≤ n ≤ 100 and r ≤ n, are greater than 1000000?
+  - key point
+      factorial and combinatorics
+  - programming aspect
+      flow of the excution, *math* standard library
+  - class
+      programming
+  - difficulty
+      ★
+
 Dynamic programming
 --------------------
+Dynamic programming is a widely used method for solving a complex problem by breaking it down
+into a collection of subproblems. For each subproblem, one simply looks up the computed solution
+of the previous subproblem, thereby saving computation time greatly. Dynamic programming, or the
+thinking behind it fit for many problems in Project Euler.
+
+- `Problem 15: Lattice paths <gallery/Dynamic-programming/Problem-15.py>`_:
+
+  - task
+      Count the number of routes through a 20×20 grid
+  - key point
+      the problem can be split into subproblems, and the result from the last stage can be passed
+	  to the current stage
+  - programming aspect
+      for loop, matrix representation and operation
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 18 and 67: Maximum path sum <gallery/Dynamic-programming/Problem-18.py>`_:
+
+  - task
+      Find the maximum total from top to bottom of the triangle
+  - key point
+      Classical example of dynamic programming
+  - programming aspect
+      flow of the excution, *list* and indices
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 31 an 76: Coin sums <gallery/Dynamic-programming/Problem-31.py>`_:
+
+  - task
+      Problems 31 asks how many different ways can £2 be made using any number of coins?
+	  And Problem 76 asks how many different ways can 100 be written as a sum of at least
+	  two positive integers. Problem 77 is the same as 76 except additional prime number
+	  limitation. Overall we need to find an algorithm for counting ways of partitioning
+	  numbers.
+  - key point
+      If I split 100 into 99 and 1, then the problem becomes a little smaller, and I ask
+	  myself how many ways can 99 be expressed as sum of much smaller integers? And then 98,
+	  then 97, ..., in the end, the problem turns out to be trivial, and all we need to anwser
+	  is how many ways to partition 2.
+  - programming
+      for loop, *list*
+  - class
+      programming
+  - difficulty
+      ★★★
 
 Encryption and decryption
 -------------------------
@@ -110,8 +178,8 @@ Games
 Interesting number games
 ------------------------
 
-Prime related
--------------
+Prime number related
+--------------------
 
 Pythagorean triplet
 -------------------

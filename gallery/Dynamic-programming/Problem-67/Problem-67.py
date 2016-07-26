@@ -64,7 +64,4 @@ def dynamic(data):
 if __name__ == '__main__':
     #data = [[3], [7, 4], [2, 4, 6], [8, 5, 9, 3]]
     data = readdata('p067_triangle.txt')
-    res = dynamic(data)
-    
-        
-        
+    res = dynamic(data) # ~8.85 ms
