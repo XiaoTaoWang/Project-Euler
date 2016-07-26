@@ -45,6 +45,8 @@ Category
 
 Items for each work:
 +--------------------+-------------------------------------------------------------------------------------------------+
+| Feature            | Explanation                                                                                     |
++====================+=================================================================================================+
 | task               | Simple description of original problem                                                          |
 +--------------------+-------------------------------------------------------------------------------------------------+
 | key point          | The key point (core idea) for me to solve the problem                                           |
@@ -54,34 +56,33 @@ Items for each work:
 | class              | - Mathematics: mathematical insights may be more important for the corresponding problem        |
 |                    | - Programming: your programming skills outweighs the mathematics                                |
 +--------------------+-------------------------------------------------------------------------------------------------+
-| difficulty         | - ★      pretty easy, several minutes were enough                                               |
-|                    | - ★★     easy, under an hour                                                                    |    
-|                    | - ★★★    medium, 1-3 hours                                                                      |
-|                    | - ★★★★   difficult, I needed to consult wiki for more definitions, theorems, and algorithms     |
-|                    | - ★★★★★  very difficult, it took me more time (>=1 day) to master the underlying tricks         |
-+--------------------+--------------------------------------------------------------------------------------------------+
+| difficulty         | - ★      pretty easy, several minutes were enough                                              |
+|                    | - ★★     easy, under an hour                                                                  |    
+|                    | - ★★★    medium, 1-3 hours                                                                   |
+|                    | - ★★★★   difficult, I needed to consult wiki for more definitions, theorems, and algorithms |
+|                    | - ★★★★★  very difficult, it took me more time (>=1 day) to master the underlying tricks    |
++--------------------+-------------------------------------------------------------------------------------------------+
 
 .. note:: You'll quickly find (or at least outline) a brute-force algorithm for many problems.
    It's not so easy to devise an elegant solution yet. However, that's the source of the real fun.
 
 Combinations and permutations
 ----------------------------
-1.Problem 24: Lexicographic permutations:
+- Problem 24: Lexicographic permutations:
+    - task
+        What is the millionth lexicographic permutation of the digits 0-9?
 
-task
-    What is the millionth lexicographic permutation of the digits 0-9?
+    - key point
+        Quite easy for Python using *itertools* standard library
 
-key point
-    Quite easy for Python using *itertools* standard library
+    - programming aspect
+        for loop
 
-programming aspect
-    for loop
+    - class
+        programming
 
-class
-    programming
-
-difficulty
-    ★
+    - difficulty
+        ★
 
 Dynamic programming
 --------------------
