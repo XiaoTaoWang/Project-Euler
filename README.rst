@@ -29,7 +29,7 @@ Now, enjoy yourself！
 Gallery
 ========
 Category
-++++++++
+--------
 - `Combination and permutation`_
 - `Dynamic programming`_
 - `Encryption and decryption`_
