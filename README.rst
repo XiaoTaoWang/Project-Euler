@@ -46,22 +46,17 @@ Category
 Items for each work
 ----------------------
 - task
-
-  Simple description of original problem
+    Simple description of original problem
 - key point
-
-  The key point (core idea) for me to solve the problem
+    The key point (core idea) for me to solve the problem
 - programming aspect
-
-  Related programming concept
+    Related programming concept
 - class
-
-  - Mathematics: mathematical insights may be more important for the corresponding problem
-  - Programming: your programming skills outweighs the mathematics
+    - Mathematics: mathematical insights may be more important for the corresponding problem
+    - Programming: your programming skills outweighs the mathematics
 - difficulty
-
-  - ★: pretty easy, several minutes were enough
-  - ★★: easy, within an hour
+    - ★: pretty easy, several minutes were enough
+    - ★★: easy, within an hour
 
 .. note:: You'll quickly find (or at least outline) a brute-force algorithm for many problems.
    It's not so easy to devise an elegant solution yet. However, that's the source of the real fun.
