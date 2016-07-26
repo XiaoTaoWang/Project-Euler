@@ -44,31 +44,32 @@ Category
 - `Unclassified`_
 
 Combination and permutation
-+++++++++++++++++++++++++++
+----------------------------
+★
 
 Dynamic programming
-+++++++++++++++++++
+--------------------
 
 Encryption and decryption
-+++++++++++++++++++++++++
+-------------------------
 
 Figurate number
-++++++++++++++++
+---------------
 
 Fraction and decimals
-+++++++++++++++++++++
+---------------------
 
 Games
-+++++
+-----
 
 Interesting number games
-++++++++++++++++++++++++
+------------------------
 
 Prime related
-++++++++++++++
+-------------
 
 Pythagorean triplet
-+++++++++++++++++++
+-------------------
 
 Recursive definition
 --------------------
