@@ -44,22 +44,22 @@ Category
 - `Unclassified`_
 
 Items for each work:
-+--------------------+-----------------------------------------------------------------------------------------------+
-| task               | Simple description of original problem                                                        |
-+--------------------+-----------------------------------------------------------------------------------------------+
-| key point          | The key point (core idea) for me to solve the problem                                         |
-+--------------------+-----------------------------------------------------------------------------------------------+
-| programming aspect | Related programming concept                                                                   |
-+--------------------+-----------------------------------------------------------------------------------------------+
-| class              | - Mathematics: mathematical insights may be more important for the corresponding problem      |
-|                    | - Programming: your programming skills outweighs the mathematics                              |
-+--------------------+-----------------------------------------------------------------------------------------------+
-| difficulty         | - ★      pretty easy, several minutes were enough                                            |
-|                    | - ★★     easy, under an hour                                                               |    
-|                    | - ★★★    medium, 1-3 hours                                                                    |
-|                    | - ★★★★   difficult, I needed to consult wiki for more definitions, theorems, and algorithms
-|                    | - ★★★★★  very difficult, it took me more time (>=1 day) to master the underlying tricks    |
-+--------------------+-----------------------------------------------------------------------------------------------+
++--------------------+-------------------------------------------------------------------------------------------------+
+| task               | Simple description of original problem                                                          |
++--------------------+-------------------------------------------------------------------------------------------------+
+| key point          | The key point (core idea) for me to solve the problem                                           |
++--------------------+-------------------------------------------------------------------------------------------------+
+| programming aspect | Related programming concept                                                                     |
++--------------------+-------------------------------------------------------------------------------------------------+
+| class              | - Mathematics: mathematical insights may be more important for the corresponding problem        |
+|                    | - Programming: your programming skills outweighs the mathematics                                |
++--------------------+-------------------------------------------------------------------------------------------------+
+| difficulty         | - ★      pretty easy, several minutes were enough                                               |
+|                    | - ★★     easy, under an hour                                                                    |    
+|                    | - ★★★    medium, 1-3 hours                                                                      |
+|                    | - ★★★★   difficult, I needed to consult wiki for more definitions, theorems, and algorithms     |
+|                    | - ★★★★★  very difficult, it took me more time (>=1 day) to master the underlying tricks         |
++--------------------+--------------------------------------------------------------------------------------------------+
 
 .. note:: You'll quickly find (or at least outline) a brute-force algorithm for many problems.
    It's not so easy to devise an elegant solution yet. However, that's the source of the real fun.
