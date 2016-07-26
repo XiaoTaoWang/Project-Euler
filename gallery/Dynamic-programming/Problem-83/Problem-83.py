@@ -22,7 +22,7 @@ and down.
 # The code runs in O((|E|+|V|)log|V|) by using a priority queue, where |E|
 # indicates the number of edges, and |V| is the number of nodes.
 
-import heapq, itertools, math
+import heapq, itertools
 
 class PriorityQueue():
     

@@ -130,7 +130,7 @@ thinking behind it fit for many problems in Project Euler.
   - difficulty
       ★★
 
-- `Problem 18 and 67: Maximum path sum <gallery/Dynamic-programming/Problem-18.py>`_:
+- `Problem 18 and 67: Maximum path sum <gallery/Dynamic-programming/Problem-18/Problem-18.py>`_:
 
   - task
       Find the maximum total from top to bottom of the triangle
@@ -143,7 +143,7 @@ thinking behind it fit for many problems in Project Euler.
   - difficulty
       ★★★
 
-- `Problem 31 an 76: Coin sums <gallery/Dynamic-programming/Problem-31.py>`_:
+- `Problem 31, 76 and 77: Coin sums <gallery/Dynamic-programming/Problem-31.py>`_:
 
   - task
       Problems 31 asks how many different ways can £2 be made using any number of coins?
@@ -162,6 +162,51 @@ thinking behind it fit for many problems in Project Euler.
       programming
   - difficulty
       ★★★
+
+- `Problem 81: Path sum: two ways <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_:
+
+  - task
+      Find the minimum path sum from the top left to the bottom right by only moving right and
+	  down.
+  - key point
+      Recall `Problem 18 <gallery/Dynamic-programming/Problem-18/Problem-18.py>`_
+  - programming
+      flow of the excution, *list*, *map*
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 82: Path sum: three ways <gallery/Dynamic-programming/Problem-82/Problem-82.py>`_:
+
+  - task
+      Find the minimum path sum from the left column to the right column by only moving up
+	  down, and right.
+  - key point
+      Recall `Problem 81 <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_
+  - programming
+      flow of the excution, *list*, *map*
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 83: Path sum: four ways <gallery/Dynamic-programming/Problem-83/Problem-83.py>`_:
+
+  - task
+      Find the minimum path sum from the top left to the bottom right by moving left, right,
+	  up and down.
+  - key point
+      Although similar to `Problem 81 <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_
+	  and `Problem 82 <gallery/Dynamic-programming/Problem-82/Problem-82.py>`_, this problem
+	  can not be translated into the dynamic programming pattern since we can move in any
+	  direction. Dijkstra's algorithm may be a good choice then.
+  - programming
+      priority queue
+  - class
+      programming
+  - difficulty
+      ★★★★
 
 Encryption and decryption
 -------------------------
