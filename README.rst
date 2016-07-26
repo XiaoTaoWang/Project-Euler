@@ -167,7 +167,7 @@ thinking behind it fit for many problems in Project Euler.
 
   - task
       Find the minimum path sum from the top left to the bottom right by only moving right and
-	  down.
+      down.
   - key point
       Recall `Problem 18 <gallery/Dynamic-programming/Problem-18/Problem-18.py>`_
   - programming
@@ -181,7 +181,7 @@ thinking behind it fit for many problems in Project Euler.
 
   - task
       Find the minimum path sum from the left column to the right column by only moving up
-	  down, and right.
+      down, and right.
   - key point
       Recall `Problem 81 <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_
   - programming
@@ -195,12 +195,12 @@ thinking behind it fit for many problems in Project Euler.
 
   - task
       Find the minimum path sum from the top left to the bottom right by moving left, right,
-	  up and down.
+      up and down.
   - key point
       Although similar to `Problem 81 <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_
-	  and `Problem 82 <gallery/Dynamic-programming/Problem-82/Problem-82.py>`_, this problem
-	  can not be translated into the dynamic programming pattern since we can move in any
-	  direction. Dijkstra's algorithm may be a good choice then.
+      and `Problem 82 <gallery/Dynamic-programming/Problem-82/Problem-82.py>`_, this problem
+      can not be translated into the dynamic programming pattern since we can move in any
+      direction. Dijkstra's algorithm may be a good choice then.
   - programming
       priority queue
   - class
