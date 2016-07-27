@@ -979,9 +979,141 @@ Euler doesn't miss it.
 
 Recursive definition
 --------------------
+In mathematics and computer science, recursion indicates such kind of definitions that contain a
+reference to the thing being defined. For me, it's one of the most powerful but mysterious concept I
+know.
+
+- `Problem 2: Even Fibonacci numbers <gallery/Recursive-definition/Problem-2.py>`_:
+
+  - task
+      By considering the terms in the Fibonacci sequence whose values do not exceed four million, find
+      the sum of the even-valued terms.
+  - key point
+      generator
+  - programming
+      generator
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 14: Longest Collatz sequence <gallery/Recursive-definition/Problem-14.py>`_:
+
+  - task
+      Which starting number, under one million, produces the longest Collatz sequence?
+  - key point
+      just follow the rule to generate the chain
+  - programming
+      flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 25: 1000-digit Fibonacci number <gallery/Recursive-definition/Problem-25.py>`_:
+
+  - task
+      What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+  - key point
+      generator
+  - programming
+      generator
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 28: Number spiral diagonals <gallery/Recursive-definition/Problem-28.py>`_:
+
+  - task
+      What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
+  - key point
+      f(0) = 1, f(n) = f(n-1) + 4*(2*n+1)^2 - 12*n, where n is the ring index
+  - programming
+      generator
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★
 
 Totient function
 ----------------
+In number theory, Euler's totient function counts the positive integers up to a given integer n that are
+relatively prime to n. Although specific, nothing can cover its beauty.
+
+- `Problem 69: Totient maximum <gallery/Totient-function/Problem-69.py>`_:
+
+  - task
+      If Euler's totient function is denoted as φ(n), find the value of n ≤ 1,000,000 for which
+      n/φ(n) is a maximum.
+  - key point
+      Sieve of Eratosthenes, trial division
+  - programming
+      bool array, mathematical operations, flow of the excution, interface design
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★
+
+- `Problem 70: Totient permutation <gallery/Totient-function/Problem-70.py>`_:
+
+  - task
+      If Euler's totient function is denoted as φ(n), find the value of n, 1 < n < 10^7, for which φ(n)
+      is a permutation of n and the ratio n/φ(n) produces a minimum.
+  - key point
+      Since we need to minimize the n/φ(n), the prime factors of n should be large and the number of them
+      should be as small as possible.
+  - programming
+      interface design, numpy array
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★
+
+- `Problem 71: Ordered fractions <gallery/Totient-function/Problem-71.py>`_:
+
+  - task
+      By listing the set of reduced proper fractions for d ≤ 1,000,000 in ascending order of size, find the
+      numerator of the fraction immediately to the left of 3/7.
+  - key point
+      Given max denominator, devise a general algorithm to search any fraction instead of 3/7. Denote this
+      fraction as a/b, current denominator as q, numerator as p, then the largest p will be (a*q-1)//b, ...,
+      lower q, and repeat the procedure
+  - programming
+      mathematical operations, flow of the excution, algorithm design, interface design
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★
+
+- `Problem 72: Counting fractions <gallery/Totient-function/Problem-72.py>`_:
+
+  - task
+      How many elements would be contained in the set of reduced proper fractions for d ≤ 1,000,000?
+  - key point
+      Euler's totient function, modified Sieve of Eratosthenes
+  - programming
+      algorithm design, mathematical operations
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★★
+
+- `Problem 73: Counting fractions in a range <gallery/Totient-function/Problem-73.py>`_:
+
+  - task
+      How many fractions lie between 1/3 and 1/2 in the sorted set of reduced proper fractions for d ≤ 12,000?
+  - key point
+      Farey Sequence
+  - programming
+      interface design, while loop
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+
+
 
 Unclassified
 ------------
