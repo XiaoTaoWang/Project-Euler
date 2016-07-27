@@ -20,7 +20,7 @@ letters. The use of "and" when writing out numbers is in compliance with British
 usage.
 
 """
-# It's much more like a arithmetic problem
+# It's much more like an arithmetic problem
 # 0 - 9
 ones = sum([3, 3, 5, 4, 4, 3, 5, 5, 4])
 

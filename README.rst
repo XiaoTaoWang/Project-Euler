@@ -1112,8 +1112,267 @@ relatively prime to n. Although specific, nothing can cover its beauty.
   - difficulty
       ★★★
 
-
-
-
 Unclassified
 ------------
+I can't find any uniform pattern shared by these problems, so I temporarily label them "Unclassified". Some
+of them may be good materials for programming exercises yet.
+
+- `Problem 1: Multiples of 3 and 5 <gallery/Unclassified/Problem-1.py>`_:
+
+  - task
+      Find the sum of all the multiples of 3 or 5 below 1000.
+  - key point
+      too simle
+  - programming
+      for loop, update variables, unpack arguments, modulus operator
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 6: Sum square difference <gallery/Unclassified/Problem-6.py>`_:
+
+  - task
+      Find the difference between the sum of the squares of the first one hundred natural numbers and the
+      square of the sum.
+  - key point
+      folumas for sum of squares, and square of sum
+  - programming
+      assignment, mathematical operaions
+  - class
+      mathematics
+  - difficulty
+      ★
+
+- `Problem 8: Largest product in a series <gallery/Unclassified/Problem-8.py>`_:
+
+  - task
+      Find the thirteen adjacent digits in the given 1000-digit number that have the greatest product.
+  - key point
+      too simle
+  - programming
+      string split, string concatenation, string slices and indices, *map*
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 11: Largest product in a grid <gallery/Unclassified/Problem-11.py>`_:
+
+  - task
+      What is the greatest product of four adjacent numbers in the same direction (up, down, left, right,
+      or diagonally) in given 20×20 grid?
+  - key point
+      straightforward
+  - programming
+      numpy array, list comprehension, *map*
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 12: Highly divisible triangular number <gallery/Unclassified/Problem-12.py>`_:
+
+  - task
+      What is the value of the first triangle number to have over five hundred divisors?
+  - key point
+      brute force
+  - programming
+      generator, mathematical operations, interface design
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 13: Large sum <gallery/Unclassified/Problem-13.py>`_:
+
+  - task
+      Work out the first ten digits of the sum of the given one-hundred 50-digit numbers.
+  - key point
+      trivial
+  - programming
+      It's so easy that I only posted the problem statement in the script
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 16: Power digit sum <gallery/Unclassified/Problem-16.py>`_:
+
+  - task
+      What is the sum of the digits of the number 2^1000?
+  - key point
+      trivial
+  - programming
+      long integer
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 17: Number letter counts <gallery/Unclassified/Problem-17.py>`_:
+
+  - task
+      If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many
+      letters would be used?
+  - key point
+      treat it as an arithmetic problem
+  - programming
+      assignment, *sum*
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 19: Counting Sundays <gallery/Unclassified/Problem-19.py>`_:
+
+  - task
+      How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec
+      2000)?
+  - key point
+      *calendar* standard library
+  - programming
+      for loop, function call
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 20: Factorial digit sum <gallery/Unclassified/Problem-20.py>`_:
+
+  - task
+      Find the sum of the digits in the number 100!
+  - key point
+      *math* standard library
+  - programming
+      It's so easy that I only posted the problem statement in the script
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 22: Names scores <gallery/Unclassified/Problem-22/Problem-22.py>`_:
+
+  - task
+      According to the name score definition, what is the total of all the name scores in the file?
+  - key point
+      Quite straightforward
+  - programming
+      *with* statement, *string* methods, *string* standard library, list comprehension, slices,
+      iterator
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 40: Champernowne's constant <gallery/Unclassified/Problem-40.py>`_:
+
+  - task
+      Find the nth digit of the Champernowne's constant.
+  - key point
+      represent the number as a string
+  - programming
+      string concatenation, interface design
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 48: Self powers <gallery/Unclassified/Problem-48.py>`_:
+
+  - task
+      Find the last ten digits of the series, 1^1 + 2^2 + 3^3 + ... + 1000^1000.
+  - key point
+      too simple
+  - programming
+      It's so easy that I only posted the problem statement in the script
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 56: Powerful digit sum <gallery/Unclassified/Problem-56.py>`_:
+
+  - task
+      Considering natural numbers of the form, a^b, where a, b < 100, what is the maximum digital sum?
+  - key point
+      no tricks
+  - programming
+      number, sequence, *map*
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 80: Square root digital expansion <gallery/Unclassified/Problem-80.py>`_:
+
+  - task
+      For the first one hundred natural numbers, find the total of the digital sums of the first one
+      hundred decimal digits for all the irrational square roots.
+  - key point
+      *decimal* standard library
+  - programming
+      context management, with statement
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 85: Counting rectangles <gallery/Unclassified/Problem-85.py>`_:
+
+  - task
+      Count the number of rectangles in a rectangular grid.
+  - key point
+      How many ways can we place two horizontal lines and two vertical lines? Combinatorics
+  - programming
+      for loop
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 89: Roman numerals <gallery/Unclassified/Problem-89/Problem-89.py>`_:
+
+  - task
+      Try express Roman numerals in the minimal form.
+  - key point
+      a function converting Roman numerals to number, a function converting number into minimal Roman
+      numerals
+  - programming
+      for loop and while loop, interface design
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 91: Right triangles with integer coordinates <gallery/Unclassified/Problem-91.py>`_:
+
+  - task
+      Count the number of right angle triangles with integer coordinates.
+  - key point
+      We can classify those right angle triangles into two cases: in the special case, the right angle
+      is just on the axis, and in the regular case, the right angle lies in the first quadrant
+  - programming
+      flow of the excution, mathematical operations
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★★
+
+- `Problem 99: Largest exponential <gallery/Unclassified/Problem-99/Problem-99.py>`_:
+
+  - task
+      Which base/exponent pair in the file has the greatest numerical value.
+  - key point
+      logarithm
+  - programming
+      with statement, *numpy*
+  - class
+      programming
+  - difficulty
+      ★
+
+
+
+      
+      
