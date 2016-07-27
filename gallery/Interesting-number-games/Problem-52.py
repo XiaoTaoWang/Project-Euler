@@ -26,7 +26,7 @@ def checkPermutation(strnum1, strnum2):
 
 def search():
     
-    start = 100
+    start = 1
     while True:
         end = int(start * 10 / 6)
         for num in range(start, end+1):

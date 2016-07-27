@@ -428,7 +428,7 @@ Games excite us, and computing make us crazy!
 - `Problem 96: Su Doku <gallery/Games/Problem-96/Problem-96.py>`_:
 
   - task
-      Write a solver for 9×9 Su Doku
+      Write a solver for 9×9 Su Doku(数独)
   - key point
       exact cover problem, Algorithm X
   - programming
@@ -441,12 +441,541 @@ Games excite us, and computing make us crazy!
 
 Interesting number games
 ------------------------
+Number theory, or in older usage, arithmetic is a branch of pure mathematics devoted primarily to
+the study of integers. Many of us studied the related concepts in primary school. However, we can
+never say we truly master them. From this section, you'll certainly find much more interesting
+truth beneath the surface.
+
+- `Problem 4: Largest palindrome product <gallery/Interesting-number-games/Problem-4.py>`_:
+
+  - task
+      Find the largest palindrome made from the product of two 3-digit numbers.
+  - key point
+      brute force
+  - programming
+      for loop, string slices
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 21: Amicable numbers <gallery/Interesting-number-games/Problem-21.py>`_:
+
+  - task
+      Evaluate the sum of all the amicable numbers under 10000.
+  - key point
+      brute force
+  - programming
+      flow of the excution, mathematical operators
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 23: Non-abundant sums <gallery/Interesting-number-games/Problem-23.py>`_:
+
+  - task
+      Find the sum of all the positive integers which cannot be written as the sum of two abundant
+      numbers.
+  - key point
+      brute force
+  - programming
+      mathematical operators, bool array
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 30: Digit fifth powers <gallery/Interesting-number-games/Problem-30.py>`_:
+
+  - task
+      Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
+  - key point
+      the upper bound of the iteration, 5 * 9 ** 5 = 295245, 6 * 9 ** 5 = 354294
+  - programming
+      for loop, mathematical operator
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 32: Pandigital products <gallery/Interesting-number-games/Problem-32.py>`_:
+
+  - task
+      Find the sum of all products whose multiplicand/multiplier/product identity can be written as a
+      1 through 9 pandigital.
+  - key point
+      brute force, but limit the search space carefully, make a table showing the total digit number
+      based on the digit number of the multiplier and the multiplicand.
+  - programming
+      flow of the excution, string concatenation
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 33: Digit cancelling fractions <gallery/Interesting-number-games/Problem-33.py>`_:
+
+  - task
+      According to the cancelling operation, find all four fractions desired.
+  - key point
+      consider 4 possibilities: (10i + n) / (10i + d) = n / d, (10n + i) / (10d + i) = n / d,
+      (10i + n) / (10d + i) = n / d, and (10n + i) / (10i + d) = n / d, where n < d.
+  - programming
+      flow of the excution, mathematical operations
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 34: Digit factorials <gallery/Interesting-number-games/Problem-34.py>`_:
+
+  - task
+      Find the sum of all numbers which are equal to the sum of the factorial of their digits.
+  - key point
+      upper bound determination, 6 * 9! = 2177280, 7 digits, 7 * 9! = 2540160, 7 digits,
+      8 * 9! = 2903040, 7 digits
+  - programming
+      for loop, *fractorial* function defined in *math* standard library
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 36: Double-base palindromes <gallery/Interesting-number-games/Problem-36.py>`_:
+
+  - task
+      Find the sum of all numbers, less than one million, which are palindromic in base 10 and
+      base 2.
+  - key point
+      brute force
+  - programming
+      flow of the excution, built-in *bin* function
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 38: Pandigital multiples <gallery/Interesting-number-games/Problem-38.py>`_:
+
+  - task
+      What is the largest 1 to 9 pandigital 9-digit number that can be formed as the concatenated
+      product of an integer with (1,2, ... , n) where n > 1?
+  - key point
+      try to discover some features the fixed integer must have to limit the search space
+  - programming
+      flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 43: Sub-string divisibility <gallery/Interesting-number-games/Problem-43.py>`_:
+
+  - task
+      Find the sum of all 0 to 9 pandigital numbers with the defined sub-string divisibility property.
+  - key point
+      *permutation* function defined in *itertools* standard library, brute force
+  - programming
+      flow of the excution, *itertools* standard library, string slices, string concatenation
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 52: Permuted multiples <gallery/Interesting-number-games/Problem-52.py>`_:
+
+  - task
+      Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.
+  - key point
+      the first 10*n/6 numbers for n = 1, 10, 100, ...
+  - programming
+      flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 55: Lychrel numbers <gallery/Interesting-number-games/Problem-55.py>`_:
+
+  - task
+      How many Lychrel numbers are there below ten-thousand?
+  - key point
+      brute force
+  - programming
+      flow of the excution
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 62: Cubic permutations <gallery/Interesting-number-games/Problem-62.py>`_:
+
+  - task
+      Find the smallest cube for which exactly five permutations of its digits are cube.
+  - key point
+      Generate cubes, sort the digits to see if two cubes have the same composition
+  - programming
+      *defaultdict* in *collections*, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 63: Powerful digit counts <gallery/Interesting-number-games/Problem-63.py>`_:
+
+  - task
+      How many n-digit positive integers exist which are also an nth power?
+  - key point
+      10^(n-1) ≤ x^n < 10^n
+  - programming
+      flow of the excution, mathematical operations
+  - class
+      mathematics
+  - difficulty
+      ★★
+
+- `Problem 74: Digit factorial chains <gallery/Interesting-number-games/Problem-74.py>`_:
+
+  - task
+      According to the definition, how many factorial chains, with a starting number below one million,
+      contain exactly sixty non-repeating terms?
+  - key point
+      brute fource, keep a cache *dict*
+  - programming
+      *factorial* in *math*, *dict*, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 78: Coin partitions <gallery/Interesting-number-games/Problem-78.py>`_:
+
+  - task
+      Let p(n) represent the number of ways of partitioning n, find the least value of n for which p(n)
+      is divisible by one million.
+  - key point
+      there's a recursive generating function for partition function
+  - programming
+      generator, flow of the excution, mathematical operations
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 92: Square digit chains <gallery/Interesting-number-games/Problem-92.py>`_:
+
+  - task
+      Investigate the square digit chains, and how many starting numbers below ten million will arrive
+      at 89?
+  - key point
+      the order of the digits doesn't matter, keep a cache *dict*
+  - programming
+      flow of the excution, list comprehension
+  - class
+      programming
+  - difficulty
+      ★★★
+
 
 Prime number related
 --------------------
+A prime number is a natural number greater than 1 that has no positive divisors other 1 and itself. Although
+the simple definition, it occupies an important position in number theory, and the related theorems have become
+the backbone of modern information security.
+
+- `Problem 3: Largest prime factor <gallery/Prime-number-related/Problem-3.py>`_:
+
+  - task
+      What is the largest prime factor of the number 600851475143?
+  - key point
+      brute force, Fundamental Theorem of Arithmetic
+  - programming
+      for loop, while loop, mathematical operations
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 5: Smallest multiple <gallery/Prime-number-related/Problem-5.py>`_:
+
+  - task
+      What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+  - key point
+      Sieve of Eratosthenes, Prime Factorization
+  - programming
+      bool array, *dict*
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 7: 10001st prime <gallery/Prime-number-related/Problem-7.py>`_:
+
+  - task
+      What is the 10 001st prime number?
+  - key point
+      brute force, trial division
+  - programming
+      flow of the excution, *math*
+  - class
+      programming
+  - difficulty
+      ★
+
+- `Problem 10: Summation of primes <gallery/Prime-number-related/Problem-10.py>`_:
+
+  - task
+      Find the sum of all the primes below two million.
+  - key point
+      Sieve of Eratosthenes
+  - programming
+      bool array, for loop, long integer
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 27: Quadratic primes <gallery/Prime-number-related/Problem-27.py>`_:
+
+  - task
+      Find a quadratic formula producing the maximum number of primes for consecutive values of n,
+      starting with n = 0.
+  - key point
+      brute force, Sieve of Eratosthenes
+  - programming
+      bool array, *set*, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 35: Circular primes <gallery/Prime-number-related/Problem-35.py>`_:
+
+  - task
+      According to the definition, how many circular primes are there below one million?
+  - key point
+      brute force, Sieve of Eratosthenes
+  - programming
+      bool array, generator, *set*
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 37: Truncatable primes <gallery/Prime-number-related/Problem-37.py>`_:
+
+  - task
+      Find the sum of the only eleven primes that are both truncatable from left to right and right
+      to left.
+  - key point
+      brute force
+  - programming
+      flow of the excution, dead code
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 41: Pandigital prime <gallery/Prime-number-related/Problem-41.py>`_:
+
+  - task
+      What is the largest n-digit pandigital prime that exists?
+  - key point
+      Sieve of Eratosthenes, A number is divisible by 3 if the digit sum of the number is divisible
+      by 3.
+  - programming
+      bool array, *map*
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 46: Goldbach's other conjecture <gallery/Prime-number-related/Problem-46.py>`_:
+
+  - task
+      What is the smallest odd composite that cannot be written as the sum of a prime and twice a
+      square?(与哥德巴赫的一个猜想有关)
+  - key point
+      brute force, Sieve of Eratosthenes
+  - programming
+      bool array, *set*, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 47: Distinct primes factors <gallery/Prime-number-related/Problem-47.py>`_:
+
+  - task
+      Find the first four consecutive integers to have four distinct prime factors.
+  - key point
+      brute force, Sieve of Eratosthenes, Prime Factorization
+  - programming
+      bool array, flow of the excution
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 49: Prime permutations <gallery/Prime-number-related/Problem-49.py>`_:
+
+  - task
+      Find the defined arithmetic sequences, which are made of primes, and digits of each number
+      are permutations of each other.
+  - key point
+      burte force, Sieve of Eratosthenes
+  - programming
+      bool array, *set*, *list*, data structure selection
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 50: Consecutive prime sum <gallery/Prime-number-related/Problem-50.py>`_:
+
+  - task
+      Which prime, below one-million, can be written as the sum of the most consecutive primes?
+  - key point
+      Sieve of Eratosthenes, cumulative sum
+  - programming
+      numpy array, *set*, data structure selection
+  - class
+      programming
+  - difficulty
+      ★★★
+
+- `Problem 51: Prime digit replacements <gallery/Prime-number-related/Problem-51.py>`_:
+
+  - task
+      Find the smallest prime which, by replacing part of the number (not necessarily adjacent digits)
+      with the same digit, is part of an eight prime value family.
+  - key point
+      Sieve of Eratosthenes, the repeating part must be 3 or multiple of 3, the repeating part cannot
+      include the last digit, the repeating digit of the smallest prime must be 0, 1, or 2
+  - programming
+      bool array, *set*, *itertools*, generator,string format operation
+  - class
+      programming, mathematics
+  - difficulty
+      ★★★★
+
+- `Problem 58: Spiral primes <gallery/Prime-number-related/Problem-58.py>`_:
+
+  - task
+      Calculate the ratio of primes located on the diagonals of the spiral grid.
+  - key point
+      Sieve of Eratosthenes, trial division, Miller-Rabin primality test
+  - programming
+      bool array, mathematical operations, *divmod*, interface design, refactoring
+      time complexity
+  - class
+      programming, mathematics
+  - difficulty
+      ★★★★★
+
+- `Problem 60: Prime pair sets <gallery/Prime-number-related/Problem-60.py>`_:
+
+  - task
+      Find the lowest sum for a set of five primes for which any two primes concatenate to produce
+      another prime.
+  - key point
+      brute force, Sieve of Eratosthenes, Miller-Rabin primality test
+  - programming
+      bool array, mathematical operations, *divmod*, interface design, refactoring, algorithm
+      analysis, time and space complexity, data structure selection
+  - class
+      programming, mathematics
+  - difficulty
+      ★★★★★
+
+- `Problem 87: Prime power triples <gallery/Prime-number-related/Problem-87.py>`_:
+
+  - task
+      How many numbers below fifty million can be expressed as the sum of a prime square, prime cube,
+      and prime fourth power?
+  - key point
+      brute force, Sieve of Eratosthenes
+  - programming
+      bool array, *set*, for loop
+  - class
+      programming
+  - difficulty
+      ★★
+
+- `Problem 97: Large non-Mersenne prime <gallery/Prime-number-related/Problem-97.py>`_:
+
+  - task
+      Find the last ten digits of 28433×2^7830457+1.
+  - key point
+      Python is good for extremely big number calculation
+  - programming
+      long integer
+  - class
+      programming
+  - difficulty
+      ★
 
 Pythagorean triplet
 -------------------
+Pythagorean(毕达哥拉斯) triplet is one of the oldest achievements in the number theory. Project
+Euler doesn't miss it.
+
+- `Problem 9: Special Pythagorean triplet <gallery/Pythagorean-triplet/Problem-9.py>`_:
+
+  - task
+      There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
+  - key point
+      Euclid's foluma, primitive solutions
+  - programming
+      mathematical operations, flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 39: Integer right triangles <gallery/Pythagorean-triplet/Problem-39.py>`_:
+
+  - task
+      If p is the perimeter of a right angle, for which value of p ≤ 1000, is the number of solutions
+      maximised?
+  - key point
+      Euclid's foluma, primitive solutions
+  - programming
+      mathematical operations, flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 75: Singular integer right triangles <gallery/Pythagorean-triplet/Problem-75.py>`_:
+
+  - task
+      Given that L is the length of the wire, for how many values of L ≤ 1,500,000 can exactly one
+      integer sided right angle triangle be formed?
+  - key point
+      Euclid's foluma, primitive solutions
+  - programming
+      mathematical operations, flow of the excution
+  - class
+      mathematics
+  - difficulty
+      ★★★
+
+- `Problem 86: Cuboid route <gallery/Pythagorean-triplet/Problem-86.py>`_:
+
+  - task
+      Find the shortest path from one corner of a cuboid to another.
+  - key point
+      Pythagorean triplet, for a cuboid with H ≤ W ≤ L,the shorest path S is given by sqrt(L^2+(W+H)^2)
+      Binary search
+  - programming
+      flow of the excution, mathematical operations, interface design
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★★
+
 
 Recursive definition
 --------------------
