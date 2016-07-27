@@ -1371,8 +1371,3 @@ of them may be good materials for programming exercises yet.
       programming
   - difficulty
       ★
-
-
-
-      
-      
