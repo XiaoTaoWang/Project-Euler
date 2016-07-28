@@ -12,8 +12,8 @@ context.
 
 Inspiration
 ============
-I heard about Project Euler completely by accident. I was fascinated by the beauty features of
-amicable numbers, and there happened to be a related problem(`Problem 21 <https://projecteuler.net/problem=21>`_)
+I heard about Project Euler completely by accident. I was fascinated by the beautiful features of
+amicable numbers(亲和数), and there happened to be a related problem(`Problem 21 <https://projecteuler.net/problem=21>`_)
 distributed by Project Euler. However, what I have learned is far beyond what I expected.
 A new world is open for me, a world of mathematics and algorithm, full of unknowns and miracles.
 It's so attractive that I can't stop myself exporing it.
@@ -156,7 +156,7 @@ thinking behind it fit for many problems in Project Euler.
       myself how many ways can 99 be expressed as sum of much smaller integers? And then 98,
       then 97, ..., in the end, the problem turns out to be trivial, and all we need to anwser
       is how many ways to partition 2.
-  - programming
+  - programming aspect
       for loop, *list*
   - class
       programming
@@ -170,7 +170,7 @@ thinking behind it fit for many problems in Project Euler.
       down.
   - key point
       Recall `Problem 18 <gallery/Dynamic-programming/Problem-18/Problem-18.py>`_
-  - programming
+  - programming aspect
       flow of the excution, *list*, *map*
   - class
       programming
@@ -184,7 +184,7 @@ thinking behind it fit for many problems in Project Euler.
       down, and right.
   - key point
       Recall `Problem 81 <gallery/Dynamic-programming/Problem-81/Problem-81.py>`_
-  - programming
+  - programming aspect
       flow of the excution, *list*, *map*
   - class
       programming
@@ -201,7 +201,7 @@ thinking behind it fit for many problems in Project Euler.
       and `Problem 82 <gallery/Dynamic-programming/Problem-82/Problem-82.py>`_, this problem
       can not be translated into the dynamic programming pattern since we can move in any
       direction. Dijkstra's algorithm may be a good choice then.
-  - programming
+  - programming aspect
       priority queue
   - class
       programming
@@ -220,7 +220,7 @@ Several problems have direct connections with this topic.
       lower case characters?
   - key point
       The most frequent character in English is the space.
-  - programming
+  - programming aspect
       Python XOR operation(^)
   - class
       programming
@@ -233,7 +233,7 @@ Several problems have direct connections with this topic.
       Deduce the whole secret passcode by analysing historical login attempts.
   - key point
       topological sorting
-  - programming
+  - programming aspect
       *set*, *dict*, *reduce*, *generator*
   - class
       programming
@@ -254,7 +254,7 @@ octagonal numbers are involved in Project Euler.
       the list contain?
   - key point
       ascii_uppercase defined in *string* standard library
-  - programming
+  - programming aspect
       *dict*, list comprehension, dot notation
   - class
       programming
@@ -268,7 +268,7 @@ octagonal numbers are involved in Project Euler.
       pentagonal and the difference is minimised.
   - key point
       the difference of the first eligible pair is minimised
-  - programming
+  - programming aspect
       while loop, return statement, dead code
   - class
       programming
@@ -281,7 +281,7 @@ octagonal numbers are involved in Project Euler.
       After 40755, find the next triangle number that is also pentagonal and hexagonal.
   - key point
       When n is odd, the triangle number is a hexagonal number.
-  - programming
+  - programming aspect
       while loop, return statement, dead code
   - class
       programming
@@ -296,7 +296,7 @@ octagonal numbers are involved in Project Euler.
       a different number in the set.
   - key point
       brute force
-  - programming
+  - programming aspect
       generator, flow of the excution
   - class
       programming
@@ -317,7 +317,7 @@ just hold on, and a lot of wonders will come.
   - key point
       Simulate the long division procedure and keep track of the remainders, recurring cycle can be
       easily obtained. Larger d may generate longer recurring cycle.
-  - programming
+  - programming aspect
       flow of the excution
   - class
       programming
@@ -332,7 +332,7 @@ just hold on, and a lot of wonders will come.
   - key point
       Delve the calculation procedure of the iterations, and try to find some patterns for
       generating numerator and denominator recursively.
-  - programming
+  - programming aspect
       for loop
   - class
       mathematics
@@ -346,7 +346,7 @@ just hold on, and a lot of wonders will come.
   - key point
       There's an iterative algorithm for non perfect squares to calculate continued fraction
       expansions
-  - programming
+  - programming aspect
       flow of the excution
   - class
       mathematics
@@ -360,7 +360,7 @@ just hold on, and a lot of wonders will come.
       fraction for e.
   - key point
       I found a recursive formula about the numerator: n(k) = c(k) * n(k-1) + n(k-2)
-  - programming
+  - programming aspect
       generator
   - class
       mathematics
@@ -373,7 +373,7 @@ just hold on, and a lot of wonders will come.
       Investigate the Diophantine equation x^2 − Dy^2 = 1.
   - key point
       Fundamental solution of Pell's equation
-  - programming
+  - programming aspect
       flow of the excution
   - class
       mathematics
@@ -391,7 +391,7 @@ Games excite us, and computing make us crazy!
       Game poker: how many hands does Player 1 win?
   - key point
       The rules are clear, just simulate the game.
-  - programming
+  - programming aspect
       *class*, operator overloading
   - class
       programming
@@ -404,7 +404,7 @@ Games excite us, and computing make us crazy!
       What is the maximum 16-digit string for a “magic” 5-gon ring?
   - key point
       put 1,2,3,4,5 to the inner ring, and 6,7,8,9,10 to the outer ring
-  - programming
+  - programming aspect
       *class*, *itertools* standard library
   - class
       programming
@@ -417,7 +417,7 @@ Games excite us, and computing make us crazy!
       In the game Monopoly(大富翁), find the three most frequent squares using 4-sided dice.
   - key point
       Simulation
-  - programming
+  - programming aspect
       generator, recursive function, code, *random* and *collections* standard library
       dict comprehension
   - class
@@ -431,7 +431,7 @@ Games excite us, and computing make us crazy!
       Write a solver for 9×9 Su Doku(数独)
   - key point
       exact cover problem, Algorithm X
-  - programming
+  - programming aspect
       recursive function, generator, *set*, *dict*, *list*, object serializarion
   - class
       programming
@@ -452,7 +452,7 @@ truth beneath the surface.
       Find the largest palindrome made from the product of two 3-digit numbers.
   - key point
       brute force
-  - programming
+  - programming aspect
       for loop, string slices
   - class
       programming
@@ -465,7 +465,7 @@ truth beneath the surface.
       Evaluate the sum of all the amicable numbers under 10000.
   - key point
       brute force
-  - programming
+  - programming aspect
       flow of the excution, mathematical operators
   - class
       programming
@@ -479,7 +479,7 @@ truth beneath the surface.
       numbers.
   - key point
       brute force
-  - programming
+  - programming aspect
       mathematical operators, bool array
   - class
       programming
@@ -492,7 +492,7 @@ truth beneath the surface.
       Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
   - key point
       the upper bound of the iteration, 5 * 9 ** 5 = 295245, 6 * 9 ** 5 = 354294
-  - programming
+  - programming aspect
       for loop, mathematical operator
   - class
       mathematics
@@ -507,7 +507,7 @@ truth beneath the surface.
   - key point
       brute force, but limit the search space carefully, make a table showing the total digit number
       based on the digit number of the multiplier and the multiplicand.
-  - programming
+  - programming aspect
       flow of the excution, string concatenation
   - class
       mathematics
@@ -521,7 +521,7 @@ truth beneath the surface.
   - key point
       consider 4 possibilities: (10i + n) / (10i + d) = n / d, (10n + i) / (10d + i) = n / d,
       (10i + n) / (10d + i) = n / d, and (10n + i) / (10i + d) = n / d, where n < d.
-  - programming
+  - programming aspect
       flow of the excution, mathematical operations
   - class
       mathematics
@@ -535,7 +535,7 @@ truth beneath the surface.
   - key point
       upper bound determination, 6 * 9! = 2177280, 7 digits, 7 * 9! = 2540160, 7 digits,
       8 * 9! = 2903040, 7 digits
-  - programming
+  - programming aspect
       for loop, *fractorial* function defined in *math* standard library
   - class
       mathematics
@@ -549,7 +549,7 @@ truth beneath the surface.
       base 2.
   - key point
       brute force
-  - programming
+  - programming aspect
       flow of the excution, built-in *bin* function
   - class
       programming
@@ -563,7 +563,7 @@ truth beneath the surface.
       product of an integer with (1,2, ... , n) where n > 1?
   - key point
       try to discover some features the fixed integer must have to limit the search space
-  - programming
+  - programming aspect
       flow of the excution
   - class
       mathematics
@@ -576,7 +576,7 @@ truth beneath the surface.
       Find the sum of all 0 to 9 pandigital numbers with the defined sub-string divisibility property.
   - key point
       *permutation* function defined in *itertools* standard library, brute force
-  - programming
+  - programming aspect
       flow of the excution, *itertools* standard library, string slices, string concatenation
   - class
       programming
@@ -589,7 +589,7 @@ truth beneath the surface.
       Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.
   - key point
       the first 10*n/6 numbers for n = 1, 10, 100, ...
-  - programming
+  - programming aspect
       flow of the excution
   - class
       programming
@@ -602,7 +602,7 @@ truth beneath the surface.
       How many Lychrel numbers are there below ten-thousand?
   - key point
       brute force
-  - programming
+  - programming aspect
       flow of the excution
   - class
       programming
@@ -615,7 +615,7 @@ truth beneath the surface.
       Find the smallest cube for which exactly five permutations of its digits are cube.
   - key point
       Generate cubes, sort the digits to see if two cubes have the same composition
-  - programming
+  - programming aspect
       *defaultdict* in *collections*, flow of the excution
   - class
       programming
@@ -628,7 +628,7 @@ truth beneath the surface.
       How many n-digit positive integers exist which are also an nth power?
   - key point
       10^(n-1) ≤ x^n < 10^n
-  - programming
+  - programming aspect
       flow of the excution, mathematical operations
   - class
       mathematics
@@ -642,7 +642,7 @@ truth beneath the surface.
       contain exactly sixty non-repeating terms?
   - key point
       brute fource, keep a cache *dict*
-  - programming
+  - programming aspect
       *factorial* in *math*, *dict*, flow of the excution
   - class
       programming
@@ -656,7 +656,7 @@ truth beneath the surface.
       is divisible by one million.
   - key point
       there's a recursive generating function for partition function
-  - programming
+  - programming aspect
       generator, flow of the excution, mathematical operations
   - class
       mathematics
@@ -670,7 +670,7 @@ truth beneath the surface.
       at 89?
   - key point
       the order of the digits doesn't matter, keep a cache *dict*
-  - programming
+  - programming aspect
       flow of the excution, list comprehension
   - class
       programming
@@ -690,7 +690,7 @@ the backbone of modern information security.
       What is the largest prime factor of the number 600851475143?
   - key point
       brute force, Fundamental Theorem of Arithmetic
-  - programming
+  - programming aspect
       for loop, while loop, mathematical operations
   - class
       programming
@@ -703,7 +703,7 @@ the backbone of modern information security.
       What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
   - key point
       Sieve of Eratosthenes, Prime Factorization
-  - programming
+  - programming aspect
       bool array, *dict*
   - class
       programming
@@ -716,7 +716,7 @@ the backbone of modern information security.
       What is the 10 001st prime number?
   - key point
       brute force, trial division
-  - programming
+  - programming aspect
       flow of the excution, *math*
   - class
       programming
@@ -729,7 +729,7 @@ the backbone of modern information security.
       Find the sum of all the primes below two million.
   - key point
       Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, for loop, long integer
   - class
       programming
@@ -743,7 +743,7 @@ the backbone of modern information security.
       starting with n = 0.
   - key point
       brute force, Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, *set*, flow of the excution
   - class
       programming
@@ -756,7 +756,7 @@ the backbone of modern information security.
       According to the definition, how many circular primes are there below one million?
   - key point
       brute force, Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, generator, *set*
   - class
       programming
@@ -770,7 +770,7 @@ the backbone of modern information security.
       to left.
   - key point
       brute force
-  - programming
+  - programming aspect
       flow of the excution, dead code
   - class
       programming
@@ -784,7 +784,7 @@ the backbone of modern information security.
   - key point
       Sieve of Eratosthenes, A number is divisible by 3 if the digit sum of the number is divisible
       by 3.
-  - programming
+  - programming aspect
       bool array, *map*
   - class
       programming
@@ -798,7 +798,7 @@ the backbone of modern information security.
       square?(与哥德巴赫的一个猜想有关)
   - key point
       brute force, Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, *set*, flow of the excution
   - class
       programming
@@ -811,7 +811,7 @@ the backbone of modern information security.
       Find the first four consecutive integers to have four distinct prime factors.
   - key point
       brute force, Sieve of Eratosthenes, Prime Factorization
-  - programming
+  - programming aspect
       bool array, flow of the excution
   - class
       programming
@@ -825,7 +825,7 @@ the backbone of modern information security.
       are permutations of each other.
   - key point
       burte force, Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, *set*, *list*, data structure selection
   - class
       programming
@@ -838,7 +838,7 @@ the backbone of modern information security.
       Which prime, below one-million, can be written as the sum of the most consecutive primes?
   - key point
       Sieve of Eratosthenes, cumulative sum
-  - programming
+  - programming aspect
       numpy array, *set*, data structure selection
   - class
       programming
@@ -853,7 +853,7 @@ the backbone of modern information security.
   - key point
       Sieve of Eratosthenes, the repeating part must be 3 or multiple of 3, the repeating part cannot
       include the last digit, the repeating digit of the smallest prime must be 0, 1, or 2
-  - programming
+  - programming aspect
       bool array, *set*, *itertools*, generator,string format operation
   - class
       programming, mathematics
@@ -866,7 +866,7 @@ the backbone of modern information security.
       Calculate the ratio of primes located on the diagonals of the spiral grid.
   - key point
       Sieve of Eratosthenes, trial division, Miller-Rabin primality test
-  - programming
+  - programming aspect
       bool array, mathematical operations, *divmod*, interface design, refactoring
       time complexity
   - class
@@ -881,7 +881,7 @@ the backbone of modern information security.
       another prime.
   - key point
       brute force, Sieve of Eratosthenes, Miller-Rabin primality test
-  - programming
+  - programming aspect
       bool array, mathematical operations, *divmod*, interface design, refactoring, algorithm
       analysis, time and space complexity, data structure selection
   - class
@@ -896,7 +896,7 @@ the backbone of modern information security.
       and prime fourth power?
   - key point
       brute force, Sieve of Eratosthenes
-  - programming
+  - programming aspect
       bool array, *set*, for loop
   - class
       programming
@@ -909,7 +909,7 @@ the backbone of modern information security.
       Find the last ten digits of 28433×2^7830457+1.
   - key point
       Python is good for extremely big number calculation
-  - programming
+  - programming aspect
       long integer
   - class
       programming
@@ -927,7 +927,7 @@ Euler doesn't miss it.
       There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.
   - key point
       Euclid's foluma, primitive solutions
-  - programming
+  - programming aspect
       mathematical operations, flow of the excution
   - class
       mathematics
@@ -941,7 +941,7 @@ Euler doesn't miss it.
       maximised?
   - key point
       Euclid's foluma, primitive solutions
-  - programming
+  - programming aspect
       mathematical operations, flow of the excution
   - class
       mathematics
@@ -955,7 +955,7 @@ Euler doesn't miss it.
       integer sided right angle triangle be formed?
   - key point
       Euclid's foluma, primitive solutions
-  - programming
+  - programming aspect
       mathematical operations, flow of the excution
   - class
       mathematics
@@ -969,7 +969,7 @@ Euler doesn't miss it.
   - key point
       Pythagorean triplet, for a cuboid with H ≤ W ≤ L,the shorest path S is given by sqrt(L^2+(W+H)^2)
       Binary search
-  - programming
+  - programming aspect
       flow of the excution, mathematical operations, interface design
   - class
       mathematics, programming
@@ -990,7 +990,7 @@ know.
       the sum of the even-valued terms.
   - key point
       generator
-  - programming
+  - programming aspect
       generator
   - class
       programming
@@ -1003,7 +1003,7 @@ know.
       Which starting number, under one million, produces the longest Collatz sequence?
   - key point
       just follow the rule to generate the chain
-  - programming
+  - programming aspect
       flow of the excution
   - class
       programming
@@ -1016,7 +1016,7 @@ know.
       What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
   - key point
       generator
-  - programming
+  - programming aspect
       generator
   - class
       programming
@@ -1029,7 +1029,7 @@ know.
       What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
   - key point
       f(0) = 1, f(n) = f(n-1) + 4*(2*n+1)^2 - 12*n, where n is the ring index
-  - programming
+  - programming aspect
       generator
   - class
       mathematics, programming
@@ -1048,7 +1048,7 @@ relatively prime to n. Although specific, nothing can cover its beauty.
       n/φ(n) is a maximum.
   - key point
       Sieve of Eratosthenes, trial division
-  - programming
+  - programming aspect
       bool array, mathematical operations, flow of the excution, interface design
   - class
       mathematics, programming
@@ -1063,7 +1063,7 @@ relatively prime to n. Although specific, nothing can cover its beauty.
   - key point
       Since we need to minimize the n/φ(n), the prime factors of n should be large and the number of them
       should be as small as possible.
-  - programming
+  - programming aspect
       interface design, numpy array
   - class
       mathematics, programming
@@ -1079,7 +1079,7 @@ relatively prime to n. Although specific, nothing can cover its beauty.
       Given max denominator, devise a general algorithm to search any fraction instead of 3/7. Denote this
       fraction as a/b, current denominator as q, numerator as p, then the largest p will be (a*q-1)//b, ...,
       lower q, and repeat the procedure
-  - programming
+  - programming aspect
       mathematical operations, flow of the excution, algorithm design, interface design
   - class
       mathematics, programming
@@ -1092,7 +1092,7 @@ relatively prime to n. Although specific, nothing can cover its beauty.
       How many elements would be contained in the set of reduced proper fractions for d ≤ 1,000,000?
   - key point
       Euler's totient function, modified Sieve of Eratosthenes
-  - programming
+  - programming aspect
       algorithm design, mathematical operations
   - class
       mathematics, programming
@@ -1105,7 +1105,7 @@ relatively prime to n. Although specific, nothing can cover its beauty.
       How many fractions lie between 1/3 and 1/2 in the sorted set of reduced proper fractions for d ≤ 12,000?
   - key point
       Farey Sequence
-  - programming
+  - programming aspect
       interface design, while loop
   - class
       mathematics
@@ -1122,8 +1122,8 @@ of them may be good materials for programming exercises yet.
   - task
       Find the sum of all the multiples of 3 or 5 below 1000.
   - key point
-      too simle
-  - programming
+      too simple
+  - programming aspect
       for loop, update variables, unpack arguments, modulus operator
   - class
       programming
@@ -1137,7 +1137,7 @@ of them may be good materials for programming exercises yet.
       square of the sum.
   - key point
       folumas for sum of squares, and square of sum
-  - programming
+  - programming aspect
       assignment, mathematical operaions
   - class
       mathematics
@@ -1149,8 +1149,8 @@ of them may be good materials for programming exercises yet.
   - task
       Find the thirteen adjacent digits in the given 1000-digit number that have the greatest product.
   - key point
-      too simle
-  - programming
+      too simple
+  - programming aspect
       string split, string concatenation, string slices and indices, *map*
   - class
       programming
@@ -1164,7 +1164,7 @@ of them may be good materials for programming exercises yet.
       or diagonally) in given 20×20 grid?
   - key point
       straightforward
-  - programming
+  - programming aspect
       numpy array, list comprehension, *map*
   - class
       programming
@@ -1177,7 +1177,7 @@ of them may be good materials for programming exercises yet.
       What is the value of the first triangle number to have over five hundred divisors?
   - key point
       brute force
-  - programming
+  - programming aspect
       generator, mathematical operations, interface design
   - class
       programming
@@ -1190,7 +1190,7 @@ of them may be good materials for programming exercises yet.
       Work out the first ten digits of the sum of the given one-hundred 50-digit numbers.
   - key point
       trivial
-  - programming
+  - programming aspect
       It's so easy that I only posted the problem statement in the script
   - class
       programming
@@ -1203,7 +1203,7 @@ of them may be good materials for programming exercises yet.
       What is the sum of the digits of the number 2^1000?
   - key point
       trivial
-  - programming
+  - programming aspect
       long integer
   - class
       programming
@@ -1217,7 +1217,7 @@ of them may be good materials for programming exercises yet.
       letters would be used?
   - key point
       treat it as an arithmetic problem
-  - programming
+  - programming aspect
       assignment, *sum*
   - class
       mathematics
@@ -1231,7 +1231,7 @@ of them may be good materials for programming exercises yet.
       2000)?
   - key point
       *calendar* standard library
-  - programming
+  - programming aspect
       for loop, function call
   - class
       programming
@@ -1244,7 +1244,7 @@ of them may be good materials for programming exercises yet.
       Find the sum of the digits in the number 100!
   - key point
       *math* standard library
-  - programming
+  - programming aspect
       It's so easy that I only posted the problem statement in the script
   - class
       programming
@@ -1257,7 +1257,7 @@ of them may be good materials for programming exercises yet.
       According to the name score definition, what is the total of all the name scores in the file?
   - key point
       Quite straightforward
-  - programming
+  - programming aspect
       *with* statement, *string* methods, *string* standard library, list comprehension, slices,
       iterator
   - class
@@ -1271,7 +1271,7 @@ of them may be good materials for programming exercises yet.
       Find the nth digit of the Champernowne's constant.
   - key point
       represent the number as a string
-  - programming
+  - programming aspect
       string concatenation, interface design
   - class
       programming
@@ -1284,7 +1284,7 @@ of them may be good materials for programming exercises yet.
       Find the last ten digits of the series, 1^1 + 2^2 + 3^3 + ... + 1000^1000.
   - key point
       too simple
-  - programming
+  - programming aspect
       It's so easy that I only posted the problem statement in the script
   - class
       programming
@@ -1297,7 +1297,7 @@ of them may be good materials for programming exercises yet.
       Considering natural numbers of the form, a^b, where a, b < 100, what is the maximum digital sum?
   - key point
       no tricks
-  - programming
+  - programming aspect
       number, sequence, *map*
   - class
       programming
@@ -1311,7 +1311,7 @@ of them may be good materials for programming exercises yet.
       hundred decimal digits for all the irrational square roots.
   - key point
       *decimal* standard library
-  - programming
+  - programming aspect
       context management, with statement
   - class
       programming
@@ -1324,7 +1324,7 @@ of them may be good materials for programming exercises yet.
       Count the number of rectangles in a rectangular grid.
   - key point
       How many ways can we place two horizontal lines and two vertical lines? Combinatorics
-  - programming
+  - programming aspect
       for loop
   - class
       mathematics
@@ -1338,7 +1338,7 @@ of them may be good materials for programming exercises yet.
   - key point
       a function converting Roman numerals to number, a function converting number into minimal Roman
       numerals
-  - programming
+  - programming aspect
       for loop and while loop, interface design
   - class
       programming
@@ -1352,7 +1352,7 @@ of them may be good materials for programming exercises yet.
   - key point
       We can classify those right angle triangles into two cases: in the special case, the right angle
       is just on the axis, and in the regular case, the right angle lies in the first quadrant
-  - programming
+  - programming aspect
       flow of the excution, mathematical operations
   - class
       mathematics, programming
@@ -1365,7 +1365,7 @@ of them may be good materials for programming exercises yet.
       Which base/exponent pair in the file has the greatest numerical value.
   - key point
       logarithm
-  - programming
+  - programming aspect
       with statement, *numpy*
   - class
       programming
