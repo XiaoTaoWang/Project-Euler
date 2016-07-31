@@ -14,9 +14,9 @@ Inspiration
 ============
 I heard about Project Euler completely by accident. I was fascinated by the beautiful features of
 amicable numbers(亲和数), and there happened to be a related problem(`Problem 21 <https://projecteuler.net/problem=21>`_)
-distributed by Project Euler. However, what I have learned is far beyond what I expected.
-A new world is open for me, a world of mathematics and algorithm, full of unknowns and miracles.
-It's so attractive that I can't stop myself exporing it.
+distributed by Project Euler. However, what I have learned was far beyond what I expected.
+A new world was open for me, a world of mathematics and algorithm, full of unknowns and miracles.
+It was so attractive that I could not stop myself exporing it.
 
 In the beginning, I just solved those problems and uploaded my Python solutions named with
 the official problem indices. However, as I approached, I found the problems are not independent
@@ -67,7 +67,7 @@ Items for each work
 Combinations and permutations
 ----------------------------
 Combinations and permutations play a vital role in mathematics and computer science. It's
-prerequisite to Probability, Graph Theory, etc. Project Euler do include several problems in this
+prerequisite to Probability, Graph Theory, etc. Project Euler does include several problems in this
 field.
 
 - `Problem 24: Lexicographic permutations <gallery/Combinations-and-permutations/Problem-24.py>`_:
@@ -108,6 +108,20 @@ field.
       programming
   - difficulty
       ★
+
+- `Problem 100: Arranged probability <gallery/Combinations-and-permutations/Problem-100.py>`_:
+
+  - task
+      What is the first arrangement containing over 10^12 coloured(only blue and red) discs, so
+      that there is exactly 50% chance of taking two blue discs at random?
+  - key point
+      quadratic Diophantine Equation(丢番图方程) with two variables
+  - programming aspect
+      while loop, multiple assignment
+  - class
+      mathematics
+  - difficulty
+      ★★★
 
 Dynamic programming
 --------------------
@@ -383,7 +397,7 @@ just hold on, and a lot of wonders will come.
 
 Games
 -----
-Games excite us, and computing make us crazy!
+Games excite us, and computing makes us crazy!
 
 - `Problem 54: Poker hands <gallery/Games/Problem-54/Problem-54.py>`_:
 
