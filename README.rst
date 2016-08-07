@@ -691,6 +691,19 @@ truth beneath the surface.
   - difficulty
       ★★★
 
+- `Problem 95: Amicable chains <gallery/Interesting-number-games/Problem-95.py>`_:
+
+  - task
+      Find the smallest member of the longest amicable chain with no element exceeding one million.
+  - key point
+      Prime Factorization, Sieve of Eratosthenes
+  - programming aspect
+      data structure selection, flow of the excution, interface design
+  - class
+      programming, mathematics
+  - difficulty
+      ★★★
+
 
 Prime number related
 --------------------

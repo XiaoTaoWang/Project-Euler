@@ -31,7 +31,7 @@ one million.
 # Recall problem 21
 # Instead of brute forcing, I conceive of a slightly more efficient algorithm
 # for calculating sum of proper divisors of large number by using Prime
-# Fractorization.
+# Factorization.
 
 import numpy as np
 
@@ -48,7 +48,7 @@ def findallprimes(maxnum):
     
     return ori[Bool]
 
-# Prime Fractorization
+# Prime Factorization
 def sumbyprimes(num, primelist):
     
     n = num
