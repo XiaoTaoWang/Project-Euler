@@ -677,6 +677,21 @@ truth beneath the surface.
   - difficulty
       ★★★
 
+- `Problem 88: Product-sum numbers <gallery/Interesting-number-games/Problem-88.py>`_:
+
+  - task
+      What is the sum of all the minimal product-sum numbers for 2≤k≤12000?
+  - key point
+      These two insights are critical for me to solve this problem: 1.Note that for any set of factors,
+      we can always make it a valid product-sum by adding ones. 2.The upper bound of the minimal product-sum
+      for k may be 2k.
+  - programming aspect
+      recursive function, *dict*, *set*
+  - class
+      programming
+  - difficulty
+      ★★★
+
 - `Problem 92: Square digit chains <gallery/Interesting-number-games/Problem-92.py>`_:
 
   - task
