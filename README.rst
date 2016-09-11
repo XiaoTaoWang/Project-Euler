@@ -1401,10 +1401,25 @@ of them may be good materials for programming exercises yet.
   - difficulty
       ★★★★
 
+- `Problem 98: Anagramic squares <gallery/Unclassified/Problem-98/Problem-98.py>`_:
+
+  - task
+      What is the largest square number formed by any anagramic pair of words given in the file？
+  - key point
+      Two-step brute force. First, find all anagramic word pairs in the file. Then, just check if both
+      of them are squares. To speed up the square check, I precomputed all squares below some point and
+      contained them in a *set*.
+  - programming aspect
+      data structure selection
+  - class
+      programming
+  - dificulty
+      ★★★
+
 - `Problem 99: Largest exponential <gallery/Unclassified/Problem-99/Problem-99.py>`_:
 
   - task
-      Which base/exponent pair in the file has the greatest numerical value.
+      Which base/exponent pair in the file has the greatest numerical value?
   - key point
       logarithm
   - programming aspect
@@ -1413,3 +1428,4 @@ of them may be good materials for programming exercises yet.
       programming
   - difficulty
       ★
+
