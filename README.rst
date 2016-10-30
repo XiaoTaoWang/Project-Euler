@@ -123,6 +123,20 @@ field.
   - difficulty
       ★
 
+- `Problem 93: Arithmetic expressions <gallery/Combinations-and-permutations/Problem-93.py>`_:
+
+  - task
+      Using four distinct digits and rules of arithmetic, find the longest set of consecutive
+      positive target integers
+  - key point
+      brute force
+  - programming aspect
+      data structure selection, string formatting operations, *itertools* standard library, *eval*
+  - class
+      programming
+  - difficulty
+      ★★★
+
 - `Problem 100: Arranged probability <gallery/Combinations-and-permutations/Problem-100.py>`_:
 
   - task
