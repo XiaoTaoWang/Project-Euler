@@ -81,4 +81,4 @@ def worker():
     return count
 
 if __name__ == '__main__':
-    count = worker()
+    count = worker() # ~607ms

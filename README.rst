@@ -109,6 +109,20 @@ field.
   - difficulty
       ★
 
+- `Problem 90: Cube digit pairs <gallery/Combinations-and-permutations/Problem-90.py>`_:
+
+  - task
+      How many distinct arrangements of the two cubes allow for all of the square numbers to be
+      displayed?
+  - key point
+      We need two function, one for iterating all combinations, another for square number checking.
+  - programming aspect
+      *itertools* standard library, data structure selection
+  - class
+      programming
+  - difficulty
+      ★
+
 - `Problem 100: Arranged probability <gallery/Combinations-and-permutations/Problem-100.py>`_:
 
   - task
