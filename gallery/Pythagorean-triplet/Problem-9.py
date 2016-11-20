@@ -35,7 +35,9 @@ def euclidean(x, y):
 
 def findtriplet(condition):
     
-    maxiter = int(math.sqrt(condition))
+    # a + b + c = 2km(m+n)
+    # so, m < sqrt((a+b+c)/2)
+    maxiter = int(math.sqrt(condition/2.))
     for n in range(1, maxiter + 1):
         for m in range(n+1, maxiter + 1):
             mod = euclidean(m, n)

@@ -1046,6 +1046,19 @@ Euler doesn't miss it.
   - difficulty
       ★★★★
 
+- `Problem 94: Almost equilateral triangles <gallery/Pythagorean-triplet/Problem-94.py>`_:
+
+  - task
+      Find the sum of the perimeters of all almost equilateral triangles with integral side lengths and area
+      and whose perimeters do not exceed one billion.
+  - key point
+      It's quite straightforward to link this problem with our defined Pythagorean triplet generator before.
+  - programming aspect
+      mathematical operations, flow of the excution
+  - class
+      mathematics, programming
+  - difficulty
+      ★★★
 
 Recursive definition
 --------------------
