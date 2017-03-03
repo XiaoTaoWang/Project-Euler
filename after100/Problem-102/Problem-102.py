@@ -27,3 +27,44 @@ given above.
 
 """
 # https://en.wikipedia.org/wiki/Triangle#Using_coordinates
+# Given coordinates of three vertices of the triangle (A,B,C), it's easy to
+# calculate its area: Area(ABC) = |(x(A)-x(C))(y(B)-y(A))-(x(A)-x(B))(y(c)-y(A))|/2
+# Intuitively, if ABC contains O, the area of ABC must be equal to the sum
+# of the area of ABO, AOC and BOC
+
+def readdata(fil):
+    
+    triangles = []
+    with open(fil, 'r') as source:
+        for line in source:
+            parse = line.rstrip().split(',')
+            cur = []
+            for i in range(0,6,2):
+                cur.append((int(parse[i]),int(parse[i+1])))
+            triangles.append(cur)
+    
+    return triangles
+
+def area(A, B, C):
+    
+    S = 0.5 * abs((A[0]-C[0])*(B[1]-A[1]) - (A[0]-B[0])*(C[1]-A[1]))
+    
+    return S
+
+def work(fil):
+    
+    triangles = readdata(fil)
+    count = 0
+    for A, B, C in triangles:
+        total = area(A,B,C)
+        part1 = area(A,B,(0,0))
+        part2 = area(A,C,(0,0))
+        part3 = area(B,C,(0,0))
+        if (part1>0) and (part2>0) and (part3>0) and (part1+part2+part3==total):
+            count += 1
+    
+    return count
+
+if __name__ == '__main__':
+    count = work('p102_triangles.txt') # ~5.56ms
+            
